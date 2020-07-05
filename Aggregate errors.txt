@@ -1,0 +1,2057 @@
+C:\TRSDEV\SerenityBdd\MultiMavenProject>mvn serenity:aggregate
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO]
+[INFO] Multi Module Maven Screenplay Project                              [pom]
+[INFO] Domain Group                                                       [pom]
+[INFO] Domain One                                                         [pom]
+[INFO] Serenity project with JUnit and WebDriver                          [jar]
+[INFO] Domain Two                                                         [pom]
+[INFO] Serenity project with JUnit and WebDriver                          [jar]
+[INFO] Serenity project with JUnit and WebDriver                          [jar]
+[INFO]
+[INFO] --------------< uk.co.trs.serenitybdd:multimoduleproject >--------------
+[INFO] Building Multi Module Maven Screenplay Project 0.0.1-SNAPSHOT      [1/7]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO]
+[INFO] --- serenity-maven-plugin:2.2.10:aggregate (default-cli) @ multimoduleproject ---
+Jul 05, 2020 12:28:18 PM freemarker.log._JULLoggerFactory$JULLogger error
+SEVERE: Error executing FreeMarker template
+FreeMarker template error:
+The following has evaluated to null or missing:
+==> formatter.renderHeader  [in template "freemarker/home.ftl" at line 137, column 58]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+        - Failed at: ${formatter.htmlCompatibleStoryTitle(...  [in template "freemarker/home.ftl" at line 137, column 21]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+        at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:134)
+        at freemarker.core.UnexpectedTypeException.newDescriptionBuilder(UnexpectedTypeException.java:85)
+        at freemarker.core.UnexpectedTypeException.<init>(UnexpectedTypeException.java:63)
+        at freemarker.core.NonMethodException.<init>(NonMethodException.java:74)
+        at freemarker.core.MethodCall._eval(MethodCall.java:67)
+        at freemarker.core.Expression.eval(Expression.java:101)
+        at freemarker.core.ListLiteral.getModelList(ListLiteral.java:93)
+        at freemarker.core.MethodCall._eval(MethodCall.java:60)
+        at freemarker.core.Expression.eval(Expression.java:101)
+        at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup(DollarVariable.java:100)
+        at freemarker.core.DollarVariable.accept(DollarVariable.java:63)
+        at freemarker.core.Environment.visit(Environment.java:331)
+        at freemarker.core.Environment.visit(Environment.java:337)
+        at freemarker.core.Environment.visit(Environment.java:337)
+        at freemarker.core.Environment.process(Environment.java:310)
+        at net.thucydides.core.reports.templates.FreemarkerReportTemplate.merge(FreemarkerReportTemplate.java:39)
+        at net.thucydides.core.reports.html.Merger$MergeBuilder.to(Merger.java:37)
+        at net.thucydides.core.reports.html.BaseReportingTask.generateReportPage(BaseReportingTask.java:45)
+        at net.thucydides.core.reports.html.TagReportingTask.generateTagReport(TagReportingTask.java:83)
+        at net.thucydides.core.reports.html.TagReportingTask.generateReports(TagReportingTask.java:64)
+        at net.thucydides.core.reports.html.ReportExecutor.call(ReportExecutor.java:33)
+        at net.thucydides.core.reports.html.ReportExecutor.call(ReportExecutor.java:12)
+        at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+
+[Jul 05, 2020 12:28:18 PM freemarker.log._JULLoggerFactory$JULLogger error
+SEVERE: Error executing FreeMarker template
+FreeMarker template error:
+The following has evaluated to null or missing:
+==> formatter.renderHeader  [in template "freemarker/home.ftl" at line 137, column 58]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+        - Failed at: ${formatter.htmlCompatibleStoryTitle(...  [in template "freemarker/home.ftl" at line 137, column 21]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+        at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:134)
+        at freemarker.core.UnexpectedTypeException.newDescriptionBuilder(UnexpectedTypeException.java:85)
+        at freemarker.core.UnexpectedTypeException.<init>(UnexpectedTypeException.java:63)
+        at freemarker.core.NonMethodException.<init>(NonMethodException.java:74)
+        at freemarker.core.MethodCall._eval(MethodCall.java:67)
+        at freemarker.core.Expression.eval(Expression.java:101)
+        at freemarker.core.ListLiteral.getModelList(ListLiteral.java:93)
+        at freemarker.core.MethodCall._eval(MethodCall.java:60)
+        at freemarker.core.Expression.eval(Expression.java:101)
+        at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup(DollarVariable.java:100)
+        at freemarker.core.DollarVariable.accept(DollarVariable.java:63)
+        at freemarker.core.Environment.visit(Environment.java:331)
+        at freemarker.core.Environment.visit(Environment.java:337)
+        at freemarker.core.Environment.visit(Environment.java:337)
+        at freemarker.core.Environment.process(Environment.java:310)
+        at net.thucydides.core.reports.templates.FreemarkerReportTemplate.merge(FreemarkerReportTemplate.java:39)
+        at net.thucydides.core.reports.html.Merger$MergeBuilder.to(Merger.java:37)
+        at net.thucydides.core.reports.html.BaseReportingTask.generateReportPage(BaseReportingTask.java:45)
+        at net.thucydides.core.reports.html.TagReportingTask.generateTagReport(TagReportingTask.java:83)
+        at net.thucydides.core.reports.html.TagReportingTask.generateReports(TagReportingTask.java:64)
+        at net.thucydides.core.reports.html.ReportExecutor.call(ReportExecutor.java:33)
+        at net.thucydides.core.reports.html.ReportExecutor.call(ReportExecutor.java:12)
+        at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+
+Jul 05, 2020 12:28:18 PM freemarker.log._JULLoggerFactory$JULLogger error
+SEVERE: Error executing FreeMarker template
+FreeMarker template error:
+The following has evaluated to null or missing:
+==> formatter.renderHeader  [in template "freemarker/home.ftl" at line 137, column 58]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+        - Failed at: ${formatter.htmlCompatibleStoryTitle(...  [in template "freemarker/home.ftl" at line 137, column 21]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+        at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:134)
+        at freemarker.core.UnexpectedTypeException.newDescriptionBuilder(UnexpectedTypeException.java:85)
+        at freemarker.core.UnexpectedTypeException.<init>(UnexpectedTypeException.java:63)
+        at freemarker.core.NonMethodException.<init>(NonMethodException.java:74)
+        at freemarker.core.MethodCall._eval(MethodCall.java:67)
+        at freemarker.core.Expression.eval(Expression.java:101)
+        at freemarker.core.ListLiteral.getModelList(ListLiteral.java:93)
+        at freemarker.core.MethodCall._eval(MethodCall.java:60)
+        at freemarker.core.Expression.eval(Expression.java:101)
+        at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup(DollarVariable.java:100)
+        at freemarker.core.DollarVariable.accept(DollarVariable.java:63)
+        at freemarker.core.Environment.visit(Environment.java:331)
+        at freemarker.core.Environment.visit(Environment.java:337)
+        at freemarker.core.Environment.visit(Environment.java:337)
+        at freemarker.core.Environment.process(Environment.java:310)
+        at net.thucydides.core.reports.templates.FreemarkerReportTemplate.merge(FreemarkerReportTemplate.java:39)
+        at net.thucydides.core.reports.html.Merger$MergeBuilder.to(Merger.java:37)
+        at net.thucydides.core.reports.html.BaseReportingTask.generateReportPage(BaseReportingTask.java:45)
+        at net.thucydides.core.reports.html.TagReportingTask.generateTagReport(TagReportingTask.java:83)
+        at net.thucydides.core.reports.html.TagReportingTask.generateReports(TagReportingTask.java:64)
+        at net.thucydides.core.reports.html.ReportExecutor.call(ReportExecutor.java:33)
+        at net.thucydides.core.reports.html.ReportExecutor.call(ReportExecutor.java:12)
+        at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+
+Jul 05, 2020 12:28:18 PM freemarker.log._JULLoggerFactory$JULLogger error
+SEVERE: Error executing FreeMarker template
+FreeMarker template error:
+The following has evaluated to null or missing:
+==> formatter.renderHeader  [in template "freemarker/home.ftl" at line 137, column 58]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+        - Failed at: ${formatter.htmlCompatibleStoryTitle(...  [in template "freemarker/home.ftl" at line 137, column 21]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+        at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:134)
+        at freemarker.core.UnexpectedTypeException.newDescriptionBuilder(UnexpectedTypeException.java:85)
+        at freemarker.core.UnexpectedTypeException.<init>(UnexpectedTypeException.java:63)
+        at freemarker.core.NonMethodException.<init>(NonMethodException.java:74)
+        at freemarker.core.MethodCall._eval(MethodCall.java:67)
+        at freemarker.core.Expression.eval(Expression.java:101)
+        at freemarker.core.ListLiteral.getModelList(ListLiteral.java:93)
+        at freemarker.core.MethodCall._eval(MethodCall.java:60)
+        at freemarker.core.Expression.eval(Expression.java:101)
+        at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup(DollarVariable.java:100)
+        at freemarker.core.DollarVariable.accept(DollarVariable.java:63)
+        at freemarker.core.Environment.visit(Environment.java:331)
+        at freemarker.core.Environment.visit(Environment.java:337)
+        at freemarker.core.Environment.visit(Environment.java:337)
+        at freemarker.core.Environment.process(Environment.java:310)
+        at net.thucydides.core.reports.templates.FreemarkerReportTemplate.merge(FreemarkerReportTemplate.java:39)
+        at net.thucydides.core.reports.html.Merger$MergeBuilder.to(Merger.java:37)
+        at net.thucydides.core.reports.html.BaseReportingTask.generateReportPage(BaseReportingTask.java:45)
+        at net.thucydides.core.reports.html.TagReportingTask.generateTagReport(TagReportingTask.java:83)
+        at net.thucydides.core.reports.html.TagReportingTask.generateReports(TagReportingTask.java:64)
+        at net.thucydides.core.reports.html.ReportExecutor.call(ReportExecutor.java:33)
+        at net.thucydides.core.reports.html.ReportExecutor.call(ReportExecutor.java:12)
+        at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+
+Jul 05, 2020 12:28:18 PM freemarker.log._JULLoggerFactory$JULLogger error
+SEVERE: Error executing FreeMarker template
+FreeMarker template error:
+The following has evaluated to null or missing:
+==> formatter.renderHeader  [in template "freemarker/home.ftl" at line 137, column 58]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+        - Failed at: ${formatter.htmlCompatibleStoryTitle(...  [in template "freemarker/home.ftl" at line 137, column 21]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+        at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:134)
+        at freemarker.core.UnexpectedTypeException.newDescriptionBuilder(UnexpectedTypeException.java:85)
+        at freemarker.core.UnexpectedTypeException.<init>(UnexpectedTypeException.java:63)
+        at freemarker.core.NonMethodException.<init>(NonMethodException.java:74)
+        at freemarker.core.MethodCall._eval(MethodCall.java:67)
+        at freemarker.core.Expression.eval(Expression.java:101)
+        at freemarker.core.ListLiteral.getModelList(ListLiteral.java:93)
+        at freemarker.core.MethodCall._eval(MethodCall.java:60)
+        at freemarker.core.Expression.eval(Expression.java:101)
+        at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup(DollarVariable.java:100)
+        at freemarker.core.DollarVariable.accept(DollarVariable.java:63)
+        at freemarker.core.Environment.visit(Environment.java:331)
+        at freemarker.core.Environment.visit(Environment.java:337)
+        at freemarker.core.Environment.visit(Environment.java:337)
+        at freemarker.core.Environment.process(Environment.java:310)
+        at net.thucydides.core.reports.templates.FreemarkerReportTemplate.merge(FreemarkerReportTemplate.java:39)
+        at net.thucydides.core.reports.html.Merger$MergeBuilder.to(Merger.java:37)
+        at net.thucydides.core.reports.html.BaseReportingTask.generateReportPage(BaseReportingTask.java:45)
+        at net.thucydides.core.reports.html.TagReportingTask.generateTagReport(TagReportingTask.java:83)
+        at net.thucydides.core.reports.html.TagReportingTask.generateReports(TagReportingTask.java:64)
+        at net.thucydides.core.reports.html.ReportExecutor.call(ReportExecutor.java:33)
+        at net.thucydides.core.reports.html.ReportExecutor.call(ReportExecutor.java:12)
+        at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+
+Jul 05, 2020 12:28:18 PM freemarker.log._JULLoggerFactory$JULLogger error
+SEVERE: Error executing FreeMarker template
+FreeMarker template error:
+The following has evaluated to null or missing:
+==> formatter.renderHeader  [in template "freemarker/home.ftl" at line 137, column 58]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+        - Failed at: ${formatter.htmlCompatibleStoryTitle(...  [in template "freemarker/home.ftl" at line 137, column 21]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+        at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:134)
+        at freemarker.core.UnexpectedTypeException.newDescriptionBuilder(UnexpectedTypeException.java:85)
+        at freemarker.core.UnexpectedTypeException.<init>(UnexpectedTypeException.java:63)
+        at freemarker.core.NonMethodException.<init>(NonMethodException.java:74)
+        at freemarker.core.MethodCall._eval(MethodCall.java:67)
+        at freemarker.core.Expression.eval(Expression.java:101)
+        at freemarker.core.ListLiteral.getModelList(ListLiteral.java:93)
+        at freemarker.core.MethodCall._eval(MethodCall.java:60)
+        at freemarker.core.Expression.eval(Expression.java:101)
+        at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup(DollarVariable.java:100)
+        at freemarker.core.DollarVariable.accept(DollarVariable.java:63)
+        at freemarker.core.Environment.visit(Environment.java:331)
+        at freemarker.core.Environment.visit(Environment.java:337)
+        at freemarker.core.Environment.visit(Environment.java:337)
+        at freemarker.core.Environment.process(Environment.java:310)
+        at net.thucydides.core.reports.templates.FreemarkerReportTemplate.merge(FreemarkerReportTemplate.java:39)
+        at net.thucydides.core.reports.html.Merger$MergeBuilder.to(Merger.java:37)
+        at net.thucydides.core.reports.html.BaseReportingTask.generateReportPage(BaseReportingTask.java:45)
+        at net.thucydides.core.reports.html.TagReportingTask.generateTagReport(TagReportingTask.java:83)
+        at net.thucydides.core.reports.html.TagReportingTask.generateReports(TagReportingTask.java:64)
+        at net.thucydides.core.reports.html.ReportExecutor.call(ReportExecutor.java:33)
+        at net.thucydides.core.reports.html.ReportExecutor.call(ReportExecutor.java:12)
+        at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+
+Jul 05, 2020 12:28:18 PM freemarker.log._JULLoggerFactory$JULLogger error
+SEVERE: Error executing FreeMarker template
+FreeMarker template error:
+The following has evaluated to null or missing:
+==> formatter.renderHeader  [in template "freemarker/home.ftl" at line 137, column 58]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+        - Failed at: ${formatter.htmlCompatibleStoryTitle(...  [in template "freemarker/home.ftl" at line 137, column 21]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+        at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:134)
+        at freemarker.core.UnexpectedTypeException.newDescriptionBuilder(UnexpectedTypeException.java:85)
+        at freemarker.core.UnexpectedTypeException.<init>(UnexpectedTypeException.java:63)
+        at freemarker.core.NonMethodException.<init>(NonMethodException.java:74)
+        at freemarker.core.MethodCall._eval(MethodCall.java:67)
+        at freemarker.core.Expression.eval(Expression.java:101)
+        at freemarker.core.ListLiteral.getModelList(ListLiteral.java:93)
+        at freemarker.core.MethodCall._eval(MethodCall.java:60)
+        at freemarker.core.Expression.eval(Expression.java:101)
+        at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup(DollarVariable.java:100)
+        at freemarker.core.DollarVariable.accept(DollarVariable.java:63)
+        at freemarker.core.Environment.visit(Environment.java:331)
+        at freemarker.core.Environment.visit(Environment.java:337)
+        at freemarker.core.Environment.visit(Environment.java:337)
+        at freemarker.core.Environment.process(Environment.java:310)
+        at net.thucydides.core.reports.templates.FreemarkerReportTemplate.merge(FreemarkerReportTemplate.java:39)
+        at net.thucydides.core.reports.html.Merger$MergeBuilder.to(Merger.java:37)
+        at net.thucydides.core.reports.html.BaseReportingTask.generateReportPage(BaseReportingTask.java:45)
+        at net.thucydides.core.reports.html.TagReportingTask.generateTagReport(TagReportingTask.java:83)
+        at net.thucydides.core.reports.html.TagReportingTask.generateReports(TagReportingTask.java:64)
+        at net.thucydides.core.reports.html.ReportExecutor.call(ReportExecutor.java:33)
+        at net.thucydides.core.reports.html.ReportExecutor.call(ReportExecutor.java:12)
+        at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+
+Jul 05, 2020 12:28:18 PM freemarker.log._JULLoggerFactory$JULLogger error
+SEVERE: Error executing FreeMarker template
+FreeMarker template error:
+The following has evaluated to null or missing:
+==> formatter.renderHeader  [in template "freemarker/home.ftl" at line 137, column 58]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+        - Failed at: ${formatter.htmlCompatibleStoryTitle(...  [in template "freemarker/home.ftl" at line 137, column 21]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+        at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:134)
+        at freemarker.core.UnexpectedTypeException.newDescriptionBuilder(UnexpectedTypeException.java:85)
+        at freemarker.core.UnexpectedTypeException.<init>(UnexpectedTypeException.java:63)
+        at freemarker.core.NonMethodException.<init>(NonMethodException.java:74)
+        at freemarker.core.MethodCall._eval(MethodCall.java:67)
+        at freemarker.core.Expression.eval(Expression.java:101)
+        at freemarker.core.ListLiteral.getModelList(ListLiteral.java:93)
+        at freemarker.core.MethodCall._eval(MethodCall.java:60)
+        at freemarker.core.Expression.eval(Expression.java:101)
+        at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup(DollarVariable.java:100)
+        at freemarker.core.DollarVariable.accept(DollarVariable.java:63)
+        at freemarker.core.Environment.visit(Environment.java:331)
+        at freemarker.core.Environment.visit(Environment.java:337)
+        at freemarker.core.Environment.visit(Environment.java:337)
+        at freemarker.core.Environment.process(Environment.java:310)
+        at net.thucydides.core.reports.templates.FreemarkerReportTemplate.merge(FreemarkerReportTemplate.java:39)
+        at net.thucydides.core.reports.html.Merger$MergeBuilder.to(Merger.java:37)
+        at net.thucydides.core.reports.html.BaseReportingTask.generateReportPage(BaseReportingTask.java:45)
+        at net.thucydides.core.reports.html.TagReportingTask.generateTagReport(TagReportingTask.java:83)
+        at net.thucydides.core.reports.html.TagReportingTask.generateReports(TagReportingTask.java:64)
+        at net.thucydides.core.reports.html.ReportExecutor.call(ReportExecutor.java:33)
+        at net.thucydides.core.reports.html.ReportExecutor.call(ReportExecutor.java:12)
+        at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+
+Jul 05, 2020 12:28:18 PM freemarker.log._JULLoggerFactory$JULLogger error
+SEVERE: Error executing FreeMarker template
+FreeMarker template error:
+The following has evaluated to null or missing:
+==> formatter.renderHeader  [in template "freemarker/home.ftl" at line 137, column 58]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+        - Failed at: ${formatter.htmlCompatibleStoryTitle(...  [in template "freemarker/home.ftl" at line 137, column 21]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+        at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:134)
+        at freemarker.core.UnexpectedTypeException.newDescriptionBuilder(UnexpectedTypeException.java:85)
+        at freemarker.core.UnexpectedTypeException.<init>(UnexpectedTypeException.java:63)
+        at freemarker.core.NonMethodException.<init>(NonMethodException.java:74)
+        at freemarker.core.MethodCall._eval(MethodCall.java:67)
+        at freemarker.core.Expression.eval(Expression.java:101)
+        at freemarker.core.ListLiteral.getModelList(ListLiteral.java:93)
+        at freemarker.core.MethodCall._eval(MethodCall.java:60)
+        at freemarker.core.Expression.eval(Expression.java:101)
+        at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup(DollarVariable.java:100)
+        at freemarker.core.DollarVariable.accept(DollarVariable.java:63)
+        at freemarker.core.Environment.visit(Environment.java:331)
+        at freemarker.core.Environment.visit(Environment.java:337)
+        at freemarker.core.Environment.visit(Environment.java:337)
+        at freemarker.core.Environment.process(Environment.java:310)
+        at net.thucydides.core.reports.templates.FreemarkerReportTemplate.merge(FreemarkerReportTemplate.java:39)
+        at net.thucydides.core.reports.html.Merger$MergeBuilder.to(Merger.java:37)
+        at net.thucydides.core.reports.html.BaseReportingTask.generateReportPage(BaseReportingTask.java:45)
+        at net.thucydides.core.reports.html.TagReportingTask.generateTagReport(TagReportingTask.java:83)
+        at net.thucydides.core.reports.html.TagReportingTask.generateReports(TagReportingTask.java:64)
+        at net.thucydides.core.reports.html.ReportExecutor.call(ReportExecutor.java:33)
+        at net.thucydides.core.reports.html.ReportExecutor.call(ReportExecutor.java:12)
+        at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+
+Jul 05, 2020 12:28:18 PM freemarker.log._JULLoggerFactory$JULLogger error
+SEVERE: Error executing FreeMarker template
+FreeMarker template error:
+The following has evaluated to null or missing:
+==> formatter.renderHeader  [in template "freemarker/home.ftl" at line 137, column 58]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+        - Failed at: ${formatter.htmlCompatibleStoryTitle(...  [in template "freemarker/home.ftl" at line 137, column 21]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+        at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:134)
+        at freemarker.core.UnexpectedTypeException.newDescriptionBuilder(UnexpectedTypeException.java:85)
+        at freemarker.core.UnexpectedTypeException.<init>(UnexpectedTypeException.java:63)
+        at freemarker.core.NonMethodException.<init>(NonMethodException.java:74)
+        at freemarker.core.MethodCall._eval(MethodCall.java:67)
+        at freemarker.core.Expression.eval(Expression.java:101)
+        at freemarker.core.ListLiteral.getModelList(ListLiteral.java:93)
+        at freemarker.core.MethodCall._eval(MethodCall.java:60)
+        at freemarker.core.Expression.eval(Expression.java:101)
+        at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup(DollarVariable.java:100)
+        at freemarker.core.DollarVariable.accept(DollarVariable.java:63)
+        at freemarker.core.Environment.visit(Environment.java:331)
+        at freemarker.core.Environment.visit(Environment.java:337)
+        at freemarker.core.Environment.visit(Environment.java:337)
+        at freemarker.core.Environment.process(Environment.java:310)
+        at net.thucydides.core.reports.templates.FreemarkerReportTemplate.merge(FreemarkerReportTemplate.java:39)
+        at net.thucydides.core.reports.html.Merger$MergeBuilder.to(Merger.java:37)
+        at net.thucydides.core.reports.html.BaseReportingTask.generateReportPage(BaseReportingTask.java:45)
+        at net.thucydides.core.reports.html.TagReportingTask.generateTagReport(TagReportingTask.java:83)
+        at net.thucydides.core.reports.html.TagReportingTask.generateReports(TagReportingTask.java:64)
+        at net.thucydides.core.reports.html.ReportExecutor.call(ReportExecutor.java:33)
+        at net.thucydides.core.reports.html.ReportExecutor.call(ReportExecutor.java:12)
+        at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+
+WARNING] Report generation failed
+[WARNING] Report generation failed
+[WARNING] Report generation failed
+[WARNING] Report generation failed
+[WARNING] Report generation failed
+[WARNING] Report generation failed
+[WARNING] Report generation failed
+[WARNING] Report generation failed
+[WARNING] Report generation failed
+[WARNING] Report generation failed
+fffffffffrrrrrrrrreemarker.eeeemarker.core.InvalidReferenceExceptioneeeeemcfearker.core.InvalidRore.InvalidReferenceExrceptione:eeeeeeeferenceException mmma: mammr:mareTkerrker.core.InvalidReferearker.core.InvalidReferenceExceptionah Trkmn.Te following has evaluated he following has keaccerreet:rhk ovr.kEoee T a.cexrr.croclnhfeuuor.eceopceral oflte.otr.eirI.e ollodIneo.IInn.vn rllvn:Iavt oaolwmoaln vvil iiiwiTaadinsndgsudRllhneiieRli Rhnlefdd gfRRef gaes:oereeo lfferr
+ fe= eneelhorrcnm=vea>iceeewainnEes lrufsExccnsgeecxioaetrnceEE  hxxpeg:menda
+ptccaeseeit=t ctt=iopp vettno>eoeiivaao:n r Eo nll:nu uf.nxaaorucT:T:ttrmaenderHeader  [in tlephtletee h ddtm ie   epooeTTfttrlrn a.ooohh f:mtr  lee lnneei os nuuof fTls"dllwoillefilhoeonrr  nlgooHegw lfi:eerr lh  am
+nollg=admmaosiier= looh>krss wess e awwisfr iiviann[/o nigerhigglnu::nomv nhaam
+
+agt==tetlagsut.e==e d>>mfea  etrtp   htffll.evhadr"aoooa rrt e lautnaemmnsuaa tdoast e "ttl lttflrne duHiree eorrenel etlaee..rv rrm d ov oe1aeemainnr3rrnau  7kddslseee, mllli[ rrriunHH/cis uosnoheega:aaol ira ntumdd
+t=eeemegmti:mn.rr=e>  f plate "
+ses=f5t [ [ dfiil" a8]
+
+----
+Tip: It's the step after the lar=> formatter.renderHeader  [in template "freemarkeid to null or missing:
+==> formatter.renderHeader  [in nst dot that causeemarker/home.ftl" at line 137, column 58]
+
+--t line 137nno r  ,-etgr:ed- ttmtaeec
+ m
+/=ptTommtotpplihl=h>aipulle raam:st foore  ntt.nree Ie mma"rt5  eun""8'rftetros]ffdlerr
+ ree.re,t
+eerlHee-h m.frane-mme aaa- oretnkts-rrdoekk
+t edlerteTeerr rriph/r"Hho p//  [hh:asoe amef ooimnmmIt edae.betee it..'refrt tf sffesmtt tol  ["rhtllpsl""hee ilna  e  aitaa lit it tastten   ts.lenmi
+tell"gfiip -npele-d nnr:eeeao- a t1-tf  e
+m11t
+3e1 7Tte33a=r77rhi,"3f pa ,,k=e  tt:cr7eo  hccr>/ooecIle,mufa llh ouulu ma rn tsammmfennsehe failing expression is known to legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+        - Failed at: ${formatter.htmlCompatibleStoryTitle(...  [in template "freemarker/home.ftl" at line 137, column 21]
+----58]
+
+----
+dt  .of55  he step after the lkcea
+sro/t td88trl]]oh  hlod it
+
+"m
+
+ s omu t--aat--heatem. tra-- ttfnth rt--lti
+
+ ofal"  atrrcTTneeiia,e t5 ce upp r1::snmal8iuaoe  3.7IIdtrsn]eek  tt,r ''tted 1
+3 trhhssceo  io.h7
+,icssttlnuhh eos -c r eeemdn  rbeeo-lr.erss e5ttofIru-monoree8r]pp,rvrn- ,ae
+H
+aan l 5
+8niioff-e-tttt.do]T
+tR
+ ee-a-rrt-e
+i-tf-h
+dTtto-eh-p-or-shhiepeee
+es-:
+enT   :r llbipc T ip: Ibe:eaaI tssf EetI'fxIott' s  rfcost re edd [too thpet'h iteitthe step after the lasti   t fites .onail.thtdnoha
+i.
+-st e-gn----
+Tt at that caused this error, not those bef otcip:g expresse-pt -ti a rtecuIonI
+aheTn ifsed taumepsh s knowsi fsptanthiselat ed e n:tte cet e  "firthrfo Ipe f( airet ar legally refer to something that's sometimes null or mis error, not those oemarker/ho.tfh
+mrbliItnsie,e-et -. fnsvhaigonf-fea-tor nleigeetl
+irlT"  x,d R pit ii npahtreelfie.ot:gt   s
+stearhs-elIehxfi -ieesnro-bn pertee-n ctes
+f he se1oTipE xesir3 slif7ep ccdeik: ,aoani i nfpotyoItcl siio.fw itoan
+lnst gu-t  n .dth-m k nen-eoejtaf  - xodwp5
+flavhaueaT8rno e]iigl:a1talp
+sttos
+cil 3t4vln -i   )aygI-olten-f  l
+ure - ghai
+txee a  fphTslal ierel u ire pkytsat sf:n  ke tsa orec ewIiiofdr oltnfmaye 'inse eo nstrOup o gimmtaes t ttsiolhe trkhehkxee oensg pniri.norsaoadlmltesswgcso nieleV atypo tr ehtn  hrt!ira oa.eUt ifenmhygftsl'nrese ee Dietrrkg xrpsan  hfsaattoloeocmlwhotu l' enyetret   sste, oltrid,Tmeoams rooes fey pselttmrr eh er enEn gdituosinoatuxocloltgmer e  l letp sytts<,# hh oot irmraani futtee otnmtf 'l nmlscehi.hnsira  yoOposu nseowig that's sometimes null or missing, etsortti meoinDsegt demo nit sh,sec eotisatlsmhmrer ii eieiVahrnsststpbthph  g?o?,neieeieorcnru >swelrgi nfBsf that's sometimes oliheet rnpyuoi eu,ohn -er lcalrd iln rpbr mo fdeereyotiseesps r f  (aa tseefiUu mhcniontioidlntetessf<gr,#yesf x.pvai  e eelabnuae
+cllgefore i si tedt,tut-ee  .e>hiewf
+ev d-Tlai-ault value like myOptionalVar!hrt em-tliy-pkeuhe--
+yn-miss.psDTre e-Em  ieie
+cnfpslyx
+cOip:agi-f<u ekpeTptecIl/y- #tfi itiioomf ,ia- f thy a ynanp:lOpde o>d-e.rfetV .Iaifa  f
+a(uiaorfj !nulsTuTiheilalmtahyVt ng <#esp: If the flaei vaDev efraluef itlio xe!afaaum pmnng  lyrliyDefaulil:intlkeeOyexoalue like myOptionalVar!myDefaultp cps t,, g 85eo mstor, )xroyiiveeooOr p
+ru pnnrs alV tuse r sesiiartsh?s one si   o< ak?eiulVse <#if myOption<> lnoanoaw#if myOptionalVar??>when-present<#else>when-alan# irVmhsw tinteia!sif freemarker.core.UnexpectedTypeExceps  t nsrm y?s-soktinown to legally refe myOptionalVar?ron tpi?Dke>nrel. ?t<epegwfault, onown to rhe</#if>. (These only s gaio> snloecn lus-onfliowmty tver the last stepp of the eee xr<t >ething hen-present (rh#ep<g#reseeeU<t#nf elesiafsnsxerexpectedTypeException.javaehl: peti lmo<>ression; to s  hwmissing</#if>. (These onoly cover the loon a avhesswhen-missing</#if>. (These only cn- wss
+oonoesclrVot step of the expr the last step le-mm eem orvaereesfeitt iisx sion; to cover the whole r ??f>tetpsmm eeirhxhweheen-present<#else>when-pre enss   gseem ratxsiw nnto something that's <si/spsshuu llosiro#oimeoilll or missing, either spefrci ennssefn>ti,g eofeyrx< oi., (mnu/p  eamr#if>. (These only cover the last s;eT hes tesei mdsst o suen pesseafiipacu solor onarugnoevlnel enf,,lkt   troy  r htue evishet cpomhseetarlh  ieivaes sepeu.erax:wsrr ih pression; to cover the whole expressiore sp clenn(ong, either specify a default value litheeklmy,tciokih Oee nl  puefe myOptionalVar!myDefault, or use re<ysstematsyxiei a#.i s opOth stprnp:dfN e aalVar.foo)!messteepiiyre(fmoyamnDoo sonnetyuOnplOhf,afi l aepttMi tsuuVtshasliivoenaostere: ! ,:nlatlua  pme xya((leVha VmmrDp(reeyyalro?irOOnfemsatpp.k?d>eftthusyileiio wEhmooost,on; to cover the whole exOpr inn)!yexnOmaasoepsr:llyp-cptDVV  suse <#if myOptionalVtioi(aaeireesent<#else>when-missonfrrmonaany..aaipnluffO,lrV use parenthesis: (myOptionalVaptoolVgt<artooira?r.o)),!/#if>. (These only cover the last stepi om !?nf.?foa?m(yfo Dmy
+loo>o)!myDefault, (myOptionalVar.foo)??
+--)!mVa-DyetnhfOpe-ry-w-D.-ftae.ult, or use ionalVar.foo)??
+----a-
+fe
+hefo
+u
+< <e#
+-l-oan
+-u)-t-if myOptionalVar??>when-present<xpir#-,-!lp----
+FTL stack trace ("~" meansrtm-yDefault, (myOptionalVar.fo (myOptional-
+eenslFVo
+,e s F)aTssiieLr.foo)??
+----
+
+----??
+----
+
+----
+FTL T(mennyLs
+F stack trace ("~" means nestin>wotnhegTt Ote<psaL-n;> -to cover the whole related):
+        - Failed cktt#seia s em ixat: ${formatter.htmlCompatibtatcoltsnkrclsspre(sieka aeinNnsS ctl>VrettoryTitle(...  [in template "freemiog<ogn/nar aawrc(ar,#M-ei kc"e.foo)??
+----
+
+----
+teO,"a e- mn  p ehodException.java:74r>. (sr/ "( ter" (heTe)lh o"m~anc"e~me.ftl" at line 137parenthesis: (myesa
+d):
+        - Failedotcmse(m"a eolumn 21]
+ tynst  smni a : nola
+ clnneesasgting-related):
+        - Failedesting-relatedVao$a t{vr) -ni  fe.:arsn elat:
+frof rr o       $tngee{-otme eah) fds</amte!Fo)t:ram tat#relyim
+i       alDark ife.seet-n tdfthrrfe.t a eFgarausmce>moltlt.i-lh:teCra.reop, terdm$  m.k eMpo({l eaCfmfaer(.tt yootl:mrOtihcToobhpmp a$aateldrheCe itt{tfitoeSa.eIltxneboerlrapolnsv.rrl.emdaShVey_aeleTsattt)tomrsivi dati.lre:ryCfollRoe enooT.
+htimo;((fn. )ptm        lla?tMe.l.reo?teC-o(i
+ te y nhc-b.m pa.l-ooc[ iedv-e.tFi S-eCExncover the last step of the  tcar
+t bal[o
+tleeemplhe whole expression, use parenthes-ryieiSnT-i.jatpxliovs-i tlott-
+rse stack tr:anapt.: alered at: ${formyTitle(.me(c(6ger e7me.p.at"ef)y ..ltter.htmlCompaIta .(O
+p"  tinbe[ ~t esm   i"[i lsain template "freemarkeir/o rn"etaaSf kmnhoomaeetrtntcoeeralen; emarker/home.f tlertm/nV.ashpoy "f (T lo rfar.t line 137, column 21]
+----ficamnetI
+    oo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+ftrvteeeln"mst.eelTaLer fia validReferenceException.java:134arnt" ( ts )tker.core.Expression.evalglfreemarkerth.e/" -
+lr( h .ei eae nlEaow.hmtxae mca  tp eo rkka1erl.l efied3te 7)snt [eles:, rt.f
+i "xip 1o       crcroeo-n3arnet7. leraemuFj, s sl aama.cIrnivciitonoal kneve2e:lene, u1d1ra l.] 0m1 mu3n1a
+1  lpc]e,2)t-od"Rr-:
+ -ee~f.-$
+{ -lrteu- f
+ h"tx o -mner pcmee ma-nt ta cEe
+a ca 2efetdrs1fte nr]ieTtyes
+yecesrerO-:mpe rairm- aenEr(-aeot.ner-mkxekm h.tfa
+rrmglek p/p.tctht eeCeomr ioioiromo .amtnenen...aarker.core.InvalidReferenceException.getIncopIarestlfnLgt.tniIa Veti-stLiteral.getModelListl" wDescriptiafrnnbstvcero art(n.eeaal nBuilderelaListLiteracfmll e(iiaoelt SIo)!myDefaued):
+        -( t.jo(U lndrnrayIFnteRkvee , (myOptionalVar.foo)??
+----
+
+--exanTvavip-1fra.e3-ela:i9lec
+7, column 21]
+eFtdi3td edTypeException.java:85Tn
+ldaceExcR)
+x ${fotir ()enceExets  EferenceException.java:134
+ ..caraco
+nkmte ptp  tion ai. . aatt  gttoert .f er.h  tm nta[fjrealf.cIiraennegrCteompatibleStoryTitle(...  [in temeet s evmtt(Iep mflmn"aeaarmn~saaraetrt"cpk:ele means nesting-related):
+nMacrev - Failed aakeeerma rnt ar1.t(:c."rkec3o I ecfkeero $n"r4efv{(rerr.ee.m.I)c.rafleUo
+rneiodmee atkoehl .xaRrerpI iorr/dd nekfmRCheoaeavceearrtatflm.le/etnhdi eleU..rfdToctemyRre_fnteneepeEex.efecvle"aemeEfcretxraEl xa xreclp.t"enkc(tpeecp ihoaterpM elet.Eitnt. oxciticnhoocnljmai.eprnoet d.et<nvlaeii.jC1e3aaUon :C11innvl7d,lpIc4vlptUcox:. Tm), ep1jcyoa3et(
+dTeu tta mxy:
+6nE 0 ppn ni2xb1)c   cleStoryTitle(...  [in template]
+eee a2cE
+- eap"- (xt1t -f]
+faemvalidReferenceException.java:134ypt
+n
+ak freemarker.core.Expression.eval ee(er
+xn e mErk ce. w np e/xpressiona.hr teaD etwi .ojracmakaD froeetoevetssenc riptior.ar.fen cm.fjarifB.tc:olUurprarvktionBua)rereeinexpectedTypeException.ne"re1. wl meae:ra(dDaU0r.6e3ckUeetn1m)ore.InvalidReenrs elc erf
+e efeeinpepctedTypeException.javxeEx r
+fU TxinaUycoTyce:i1c3onBuilder85cnptr 7te . ),e tcetEed(d
+reemarker.core.NonMethodExcep opnepnteeep.el t uEgtEx xfpxiexm inctocerpecenIe aot2pn.pteen 1tsgtemcadieti]f.r
+w(avxcTDynInn-e<e-.cn.peerejsen-mia-e taE.drnk
+v nrpndnteRvtVMfa .tc cve8ptep.i5 ar o>oDe (oErnlx(liclNae.)j.toaeIipUa
+ reaiaexipflorte8 5ehinieeo  )moa.drcnteeRnbda
+rEleendBua kxewfcTeerenceException.java:134D.ce tiEyplx  )eExdceceprtioalseeception.<init>freemarker.core.Unexpe
+    c rpccn.ca t(t ru.tloji(i epftUUdaaraovettTnnireInterpolatedStringOrMarkup.an:InvalidReferypeeoe enxxee7 .(4nEppBmfj)eException.getInstancexeeuarriccc Dava:134)ollarVariable.java:(epttlkeemer.core.UnexpectedeetI1
+>i) Tryky xception.java:85edaTon.<iniva0
+d
+(pep ere Exception.java:63U
+ xe ecc freemarker.core.UnexpectedTyptptTypeex f pEteca
+a  teeeteartdpEdi frenceException.java:134 TtxTo ree nyci)fyep.<inite>mepeor
+enpeEa m(rxEt.e ta  Urkcxinmeoceeknf reerpenwaD.pt.rxe ep.cit<erkamecooiisnonrocatertre.nict.j.eek rfed.Uaj>r avnMTrr.e.yeeav(ia:xtpcecmoehodCall._eval (pectedTypeException.newDescriptionBuilder (85:63UnexpectedTypeException.java:63ptionBuilder ()
+    )
+    )
+    UnexpectedTypeException.java:85MethodCall.java:67Exception.java:63re.NonMethodException.<init> (arker.core.Unexpectedore.DollarVariable.acceptNonMet)
+)
+ttt( od  D← ←aTypte
+r telrceion.javfree[mxpectedTypeException.java:85  marker.core.Noam foE n)f a:74rlfxM
+E r.. etaemarke( rt.UnexpectedTypeException.<init>emarkerarVariableeemaeption.newDescriptionBuilderthod
+x(jkcUaeoU    cnvrrnf. acexpectedTypeExceptifeption.<initore.Noa.core.e.Expression.evalexpectedTypeExceptreemarker.core.pt[ejreoedTytpi Nn:>oreemarker.cooMethodException.<init>63   rnneo(()(fneM.EEr..ejx←xpUnexpecthodExceava:63cN
+    )mvnite1mNonMethodException.java:74ea>dTypeException.<init>  nMeth)eption.<init>ssiodException.java:74
+r: .UU
+ 85
+k  jnntaNee  eva:101ox fx at)r)
+.c ore.MethodCall._evalfr rep c4
+  Narker.cor (a  emarkere t)← tMe a←te. .c
+MfaeTfy.tr)erl.java:671dfmato oematTr )n   rd  ypeException.java:63ef
+me t eae
+efvEexirm rm h ak aerceoare reoempnmk rktdeamtaE arreir.eckonk.tfxcetneorrr..ro rcefr.vj.e..caicereeme.osvoMcerairLeaprmxa.lptoh.6 .saktertM(3UoreLkrindeCe)Etie.ocrthn
+voe.onrcrdi elM.c rCaoe..rlao t_eee nl.eE<dvtaTamlg.xipNe.etylhnt.java:331_tornpeval (o eException.<init>)M (neio
+df MerC UneMstdelList>sion.evalethodExcx aet(hel pe   (Moml ep((Ltc.aNistLiteral.java:93EtedTypeException.jaidCeataov)xoanlhrodCall.javal.:
+t>.java:101).k sjava:67trv  ii6e)heea)lmoano7r
+Exception.java:74r(
+c  )f rM)
+ethodCall.java:67e
+   e.NonMethodExcep
+ m M o  a ethodException.<init>visitationt
+tfr orreemarker.core.MethodCall._emarker.corkjrtra mava:74on Me)f)ae .tcfer
+ e
+h e eevefer.a.r m o a .ElMeer dkacx eemmt(poteaEhaartx. Morrrrekkdefc cfortCeesesrraherreeeeol..i.occldm.epmEaC.oonN.rr_iltvh rkleeeeov..vlerkieer.aELanlixlj.sro.sca ps M(tr(voicnearoo.rne:MEtLeihxe6..ej.eE7tpotsnvMaeav)hrdesrEeo
+_sxailcsC o(oan aie.ogpol mEd:Cxe lntennpa7lrta..it.Mojjt.el4aanoe.) vv.dvvsiae<aaf
+r::illssi Ln16e e e00ii(tim v o(E)a a1tsn>tlaE .  )x
+((j(nt
+ nErjaCvkxt.fe r s eaoirsn:t s .fi h1Mtoacroeotao0eLnrenmemtd1ti e.a.htfreemarker.core.Expresseo)
+C.(aE rjpeaa:rression.evalava:337e xlo.1core.Metholld)e c.n0 1.je m
+)tk la:67apExpression.java:101ar lv))vta
+:i9
+ e .l
+x oe  amra laaaa   ec E).avtj
+p vrtt fteka r.(r  L e: e 7rfiffMe4rsreemarker.core.ListLeteamhoiteral.getModelListeemsion.j.cres)teoa adatrCr(vrmL
+(e cleaiL.ListLiteral.getModelList fr keaklr. e )irtks
+)orrleare.MatErEva:67rLatr ri.r.coistLiteral.java:93)re e .tcaoec .f.
+ethodCall._evall.java:9.L.i3 nex
+Leit)(vep  f
+Mimr  r  eare tt easrot eMr hnkstaeiemo aodero tmfn.nCald.tatc.r agee l.oeefrrevrplftlMr.reamekeal.ojeoLdeacM rmeak(eevmns.rreoEtsaalsLr:shx.e.rcpo 6kitse0(dro.crt CercooesE). a(l(c
+viEexoi LLr.lDeii rnp.r.o ss.o.lMtt njeMLLel_atiiamasesvettthrenaito: eeoVtv.adrrf1nh.0raaCrjaaial.javale1eoe.:lavlabll._eval93j (m)vd)
+aCMal3 e:   a
+ 0.t.core.Expression.evaltat
+dl hat_h)o(c x freemarker.core.MethodCall._evalp uE eo
+dvfxlate  ression IpraC C←[1.aj(mnrela alvMateemarker.core.ListLiteral.getModelList l l (seteal(. t:.srjL h1jaipMoota0of6tvdhSa.71drsvanjtteae:)CetaLea
+u0idn1cor1h) lat6er.
+ jkr0gC))Oay  aea dlr
+Ml.java:60i avrlades.core.repo
+a fat 6oata..) :cj
+. : Mu0rv a p frtemplates.Freee ft)ea r(eeee
+ceelkis.t_iaeaeeorker.core.Ellrm3aeaxtrrtatkrerphkorVmker.core.D  e)rffoaaedCaerReportTemplallsrrlrr.
+rmmrrboeevnl.Vaae .rrace.a.le.orkkL ieeirjv m(aaearrs eMlv.b..t LcclEa ergaiooex:(t1p.rrtteeeecr0Ehx0ea..r  por)slEEaf(redCFe.ppui
+s olrrgeraemeeean s .tsstaelmrMssee ivIiiokalredoonaaotltnnerk.n  e..l.ejrcLeer(f.pvvioRaersaaoErjexlllte.Mpovre   apeameine.nsaeeavhT:aELoe6EdsrsSx0mdix:ptikorr)pCsp1rtal
+alLe0silt sgjraOi e.ts1ie_. orv.c)orej nMaavan
+ore.DollarVariable.accept  .java:10l.alva.a:rjta j1  ak1( ) vu0:(aDv
+ft aofaMp13 9) ( :lr:e) 9le1tDollarVariable.java:100e0h
+ 3a rm1o
+ Call.java:60))Va ea
+at er  mk
+
+ r ia
+ ataae    bf  trrker.core.ListLiteral.getModelList  freemarker.clerae.jo   . araetmvea( cnt oeata.tL frtaist fre:D6eLf rkrar(.pekraeefreim3oatereememarker.core.MethodCall._evales.core.reportEkxs amer)l
+lrj$l. Maeltere.. a cjr.tms.slhc.ao rrvcoo.icoMdroaeaVt.:reCenoa D9e.ar.reglE.3ofrDxlevear.po)lriel
+ieasl asve(Drasr Vabra Vi:gEoxe6oa rklrn0Bpl.iaieeratae)urlb..cl bv
+alfeocr.rel dsrie  .ecea.aea( roVcmlElncacE .naxeruvcilkppat.rjotrtearu aiv( e rtolaa:Mfs(.enasre1b0reiDcImtenoooeg1lemn.rja.r.IvpMrakj
+farle.itrnsltaarv c a.:rhaitttoi1c: a3o0ade e(dCb1r7alrtceuSalltl ).Ep)onE
+aip een_.egIe rrt
+ar(3rtDklarta snd reMla arkasmS teitepr(vonr aM nti rokn..fe:trejga.luactOaveh6otper rvaeo3dmlaMned ()Ca :ae.StD
+(clVgyadDaaOvoer. liphlu )p.j anr acr
+p.eVcroamj :es i.6aa ldVelfbr0Do klrasa.reeu)on .l
+ar)rable.calculateInterpolrts.html.BDollarva.rlre.0lfcalculateInterpolatedStringOrMarkup01i ra0c.ee)orj peamo(ae
+ E:Vakatsa1n  a
+v.POoraji at.visit0reReportingTask.generateRedSetei 0 ri (aprrea boi.nrlEaeb ) lmtnetgc
+ea. tfragMr jra  roveaer anef vkrem:(k.1emeaae:tean0BuE1r0 mrt0apn.java:331ker.core.DollarVariable.calculateInterpolatedStringOrMarkup (arker.core.DollarVariable.accept (freemarker.core.DollarVariable.accept (0.core.Expression.eval ()
+    DollarVariable.java:63DollarVariable.java:63DollarVariable.java:100)
+    )
+    seReportingTask.java:45 (vironment.visit (DollarVariable.java:100)
+    atat)
+    )
+atE
+tfft   x
+n  fpreemarker.core.DollarVariable.accreea  rr  v nee ftpeese itmarker.core.Environment.viamst rr .thucydidesioarts kn.eonfarmec.e i(tfrjomeetDemreemarker.core.aran trevc.oa (rlEorea:.k.fjer1.EklnaenD0erarv.p1ovrrvollarVariable.acceptcae:o b(rn.De3mlent.visitaricrt(r3esoo a
+laltnia vrviro..TrlEnmlo)r
+at:par moa :neagar e VrRvnt.visitment.java:3316 aeia r).core.D3aol
+l  3oib(Environment.java:3313ral
+r a rc  etbe
+)il.a
+    ceatemarke tnej r eeampf.  avag. crtatr eoa:Tafr k(ert6acefreemarker.core.Environment.visiteemrmarker.core.e. f3scDr.pltg(cnoe)keorEovle
+mlirnkveraa e l(n rro.ieaDe kVnErronmae rorrrevn.mini.aalVlttcatreceaarT ob.onotnvlrfaVragreeim.rjes..eRriieeEcinaevttan(reecTa.l .a.:v(cirrlbi3E3sEurktel. eolni7ntvanr(je.mti )v
+: EoInoavjagrtnnn r vmt.eR:a6e.veei ornriEp3vonsptoantn.oivr)am mjltit
+vr aaefernvt(on 6eatene.:dEng 3 TmnS3jmt.) aevt3aa
+gnvj  s faimOri..on)ak:
+a o  (3ju((rftna 7r rtt:emarker.core.Environment.visiattt 8.k ).c
+Eenn) Dr3ronment.java:337.eEE)va   (f:
+iiav 3eo le7 irrr
+nrmm aarker.core.Environment.visit rat
+m.ee V f(a ecnn  rnaEer nott.re.Environment ientevma .protjat. freemaravce.bai tfrrkle.java:100vsakjer.core.Environment.c1.java:337arker.core.Environmenhut))esc:
+.c n E31r
+
+.i  sii   rEdiraE
+ooveffc   vment.java:310ae   onainvtima)rts(frE.  enrent.java:331t
+: eoreeef.mmknn 3 reearm a
+nijr..tmscceate 0tvn.kkpe itceeoerrro.s )
+neemcatsmara .t(aDrrhh tk uE:oeet efacn3l..mEEl3vytrrdi7annlri e.endo)rvv.iiV
+arrToor e..roktcn innamma toherrur. beegjec.ecy.aalnnRttetvrdo....evva aeirEedp:fciipsscr3oe.nEsr3eeiiottpema7t.nvrt  r(iEngTask.generateReportsnvire.reports.temror.tcnopr Dn
+vo(olnmoeli rlTnmates.FreemarkerReportTemplate.merge meermenn(eaao tt.pE..Fngrn mVaRtrvvnlviie.ere nipjessiatataortingTakea s.FreemarkerReportTemplate.mergefreva..
+krp:63ironment.java:3373m( Rnne)vinv3aFr7atr ev
+) ter.core.En)eeo.oprtm
+fi
+aTrnoer rr
+     eo kmcmatn epee  net.t e h ment.proc rlsneatatmarker.core.Environment.procuc ye  fsRast tesrfsadides.core.reports.html.ReportExectsre pe(.ujE tee (o.(meofnaErjtnEamrrvvie.arnvTaeivkrceraomakeirmvporrelan:mrlr.onlaamnc. ke3ne(comet:rt3.vRorene3.tnerecj7aope.t.j9a))vro.E.jjnErea
+
+otme0:93avEE3  a  1nxirav:orev0  :icon3a1mnur)  3
+0tennrm t))1a e.tt.jn
+
+snti:s3 esiva i)  r
+ (trEu.nkn3iemt  t.et (a)  aa(htEt
+hthucydides.tyvnt eidure.nctocir  t nodyn.ovrtmdene .tmsient.java:337heides.core.report.core.repent.java:337.atosu.r)
+o  ttynnvdides.core.reports.html.Merger$Merges. nr
+ c ee hmeimrBpt t. ymluoeniala.r dett.tlmntMedeeser freemarker.core.Enva.iphodjtig.rnae.va:rts.templuc3treFs tf.rroo3yada(eEssr.itMergeBuilder.toeoeemarker.corevdei.r m)(me
+e .pF (Merger.java:37.ni.erReportTemplate.mer rgt..er g)rvtc ie
+pr(oajFrrreemarkerReportatroe. ooEnr rceT vfeeee tmnes psmmra.nsvaorts.html.Repotape:t3elr.r tir(tpkam7em)Er
+ er. ortTemplate.java:39ta )Environme npxoocelen
+.klecnsut..  mk jtetsm osha aeert vu.r(egrnacF.ry:aEt e. n.nt3decvje(ctai 1ieamd0nrv.Foealrs)eoatrreh:nt
+ikdueemc3et or Rr hn7ya.tu ee(p. c.)drEnyj
+euuvet.itc.iv eeprteToo da sr. :enrnepmmtes3 cR1.tEepolnx.c0aoeotetart.chr)trp
+mse.f ryosmseirde rrree pi.tr.g jdo eptrea(ehvsamoTterat.E atrtmspsk cn(:mvone.l.hahrerF1ilr2ret.ttto.Ban)e..cmem.lotre
+oosapj3o3aor.rtingTask.generateReportPagenmaevarsivR3e9eid.templates.FreeRtap: emepr)r
+i)$apseports.templates.FreemarkerReportTemplate.tpla.Bt r .artu
+g imeeRrtMoe.el T
+a .rgemeportc enei rc s oncurrent.FutureTask.rung( nssetrg. (gTFeak (teFareemarkerRep t. (oshuBEgucydides.core.repo r rka:(Tere4r.torivlrerateReportPagejavTemplate.java:39rstea ediem).html.M e
+ea:r Merger.java:37kBa5oe genmm)) eteask.javaseReportingTask.java:45r.r
+
+t  .6 a)kRt$hee
+evmeeavEnvironment.visit (pouMcrE   j6  ntyen)a vironment.jTdir agdea t
+ar.t0yhth) du.tn .3aci :nlot3 e t tn7erde3h.eet1.r.j)au.etct
+uetpa tcij
+tiso :oor3 udev c asic 9t yd.. ys(.)adecu ditaMdh
+teetirsm  d.rcef l.g lnec. rsoer.e More.ece..omaer.tc.jertarrrg.atohvre reeepp.knreaunc:p$eeroorertMo3ycd7re..ptriu)trtcrsdte.rohgs
+.eurthss.tsecBh r tuy..mc.olhEdim e llint.rhnaddvmBet.alieet.trsr.srmeeTo. T..TancnaRploegmoeghtrRtreRpr.toene.eeoapt.tprsM.to.rhod Pruepriteentrpcto(oiyooigmrgMlndrcnTpagetigEeerxTdssTslkas.eaegrecssh s.generateReportPaak(t.kur$.gtegEmc.t.MjogenerateTagReportol.ne e(nvMr raesBeiee(.vr.reports.html.BaseReportingTask.grgrra.FaoeeragTe:unrntrseem$enWorker37BaramR)eagrtingTask.java:83Tee)uildentae rt.r
+.jeg(eRat Rrp
+TtTemplate.mergerP (dage. ()agaask.java:45aep :oilr M edr3(ot)1tea e0rr
+erg Bna R.rkerPoRe
+etrEaxt.ree pava:37   Meol)atortingTask.java:83Ret.)
+tph
+csyljad.yatat uortingTask.java:45 . c utor.java:1149umrnet.thucydides.core.reports.templatth y )
+
+idides.core.reports.htmFidtaeerlt  d .es.vj.eT   enet.thucydides.core.repos.  namcaavoage  crtRrra:otraa.eke:33.epttteshpen97..e) rh) urRtcj
+epm
+ayiendv lot o .r. aigpTd. Ttt r hsa ueaottssrk.iaasu.ghc.ttlc.thytR.ogTerc  tdmelimnnoenee.neeld.pBe.ttcrrmaeu..Tsaos.attrptpeorhhgcerRoRuuerTlatncceretpepyytsgaR..ddo.oirrriiThtetpmhddtetnipieerloer.essnonggrg..aBt. adccTtTTasaooPs(meorres.sakhk.eoRTeael.r.t.sgmgerEpgrRoxepelekn.noperegptcoreTe.rartruioernttsagagtRt.sogt iTr.heeeeRpRth$an(gsWtmeoeneFkTomlprpto.lra.rregsk.MrionteBekenerateReportPageemarkerReportaT .rarsgrT gs.j(etaree(atr$MergeBuilder.toReportingTask.generuvaortPageeot er a)r 8saRg.agRMe(3eteReepRegortingTask.java:64eper)Theneerapr).java:39opg
+e
+d(tT(P
+tn4.ngTask.java:6in)eagv n lssRgTask.java:atT Eeeeaa4xRRpt:oeeeat 5acppr 3goutor.java: 62roRtn7n)e ert4nitp(t)e
+TgT
+t aTask.java:45)t
+. as   .)
+attyd t gkR h i
+   de u e.  hpjaava juos ca.rca tat vytcty:di a.lang.Thread.rundingTaor nes i4dn atnee5d(k.et.r es.core.reportset.s).tt.outthrvoera:83ead.java:748umhcr
+uye ) .dc$MergeBuilder.ttt.soc
+thmMi dde r
+pei delu.re dsoasgRc[tERROR] Syntax error in report template: The following has evaluated to null or missing:
+==> formatter.renderHeader  [in template "freemarker/home.ftl" at line 137, column 58]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+        - Failed at: ${formatter.htmlCompatibleStoryTitle(...  [in template "freemarker/home.ftl" at line 137, column 21]
+----
+        - Failed at: ${formatter.htmlCompatibleStoryTitle(...  [in template "freemarker/home.ftl" at line 137, column 21]
+
+re.s tsa.cer.java:37eyore.reports.html.BaseReportingt.n.cpcore.reports.html.TagReportingTask.generateTagRdides.core.reports.html.TagReportingTask.generateTagReport)
+eportTa (heoo s     rrnk(TttaTagRepml.TagReportingTask.generateRepo.thucydides.core.reports.html.TagReportinttee.rortingTask.java:83atsgTExecuto.reports.html.ReportExecutor.callt.thgenerateReportPage net.thucydides.core.reports.html.BaseRepd(( ep(BBTaeenerateTagReporteuc (ra g)y  R.callsk.g(R
+oarrEocturxtingTask.java:64tingTask.java:45sk.java:83rtingTask.generateReports (oeeig)RnpprexeeptoogTep
+    TagReportingTask.java:64)
+    )
+    )
+    ecutor.java:33tingTask.java:45tor.java:33.thucydides.core.reports.html.TagReportingTask.generateReports ()
+    )
+    )
+    atatat)
+    atat net.thucydides.core.reports.html.TagReportingTask.generateReports ( net.thucydides.core.reports.html.TagReportingTask.generateTagReport ( net.thucydides.core.reports.html.ReportExecutor.call (atatatTagReportingTask.java:64 net.thucydide  RTT  naaennes.core.reports.html.ReportExecutor.call)
+t.thucydiet.thucydides.core.reports.html.ReportExecuportExecutor.java:33ggentor.callde     s RRat.thucydiet.thuc)ydides. pcReports.html(l.TagReportingTask.generateReportsdes.core.te(.(er
+nRoope.ReportExecutor.calleprtingTask.java:64roTo )    epatt
+   (erar .reports.html.TagReportingTask.generateT.thucydides.core.roepagRepnet.thucydides.core. tgtRroortartrtstEiREee. (hxnexp pTanet.thucydides.core.reports.html.ReportExecutor.orts.html.RgReportingTask.java:83tegpeoecallml.ReportExecutor)callcutor.java:12Tocrp  ))ask.java:83ruto((
+
+RE
+eportExecutor.java:33  iopjava:33R  tte  )(a
+Rt)e   nro
+ a)  tE  6or.java:12  g.r na)Task.javajava:12t et:
+naxtat net.thucydides.core.reports.html.ReportExecutor.calletecutor.java:334 .
+). u tt jtne) h avhucydid)ReportExecutor.java:12
+att
+s. c
+ya  h  .uc  u   jtdc  ot r←aydieides.core.reports.html.ReportExecutor.cavtaa.dai[at .lretlm .  jnulesp teanjcaevti(o.l.atvoa..t.Rrctechut.nuhtuopso.onciutciclycrhrttud.ylu.dcirEmelxrdoicrodneee..Tcnscenrcsu.tuargt.cr.uercroFoReerureornernetk..oju.tentt..rrarotveeFr..FeupTairn:aotpuFtours1gtT2ktrruuass).setrtesT.html.ReportExecutor.cr
+uaa.Tuask.runhtml.ReportExecutor.callsk.ln ghe  (lr  r (nt (Fu (eRemTRateportExeralaFeuntpus.tc ueTktou rru.aRtjoegrrte(.))portin.java:266e aesuatkcs(otjku.u.rejt.Frsa tujoaTuavrati(vnuv.astk:jarTag:ae:a2.java:266i6v)266Tg1T)ask.generaasR2
+
+cgTask.java:
+
+  nac  )   e4  o)
+ p
+
+  utor at        a rraja   ttjtetavnas← ata.util.concurrent.ThreadPoolExecut javavt.[Fa.uo  jaa(jrt.umvtaTa.iut nagReporttigTask.java:64vrltu .eu)au.cirnelon.
+uWn.Teask.run (ccot l.til.concurrent.ThreadPool .ctFho Eourk.erncxecutor.r ncuuuurrent.ThreadPoolExecutourrrt erranctyWtien(hoduuides.corrntT.tuer rckneTn.FhreadPoolExecutor.java:1149uTWa.eeyd)thosrtr.ekrru
+aseEaTsx(jeae d TdPorava:266ru(oa  e)sk.runts.html.Reportcydid Thlr(eE
+t.e.hdxc FccrPe coeouujoattraou tldeouvrarr.PEo rxor.e.euTceoe. rclpaat.rauuEolsiklrxtnteWoet .lj(scro pa.vR.u.rjoakjtheuc:ptoaevrarvrmo2o6rl.a .tu(:j.t6ntsc)Ti.1aREev1hlh
+4Ecx9pxo:9mce r1ret1)loa r dn.
+ttP eeuna)ct euorp ou
+Rald.ver .o  .tnltEajr jTa .atx.Evc vhaa eTxhcj:laar.tl1aureuet  2vtec(jia)aoaudr.
+troeuvreea.util.concurrent.FutureTask.runrradr.roreonltxx .aj(ee..tlava:1149tRccTc.E)eportExecutuho jTxhancrtou
+te:xu acd(nojn. P at.ThreadPoolExecutor$Worker.runuva:3o WjoFoao l3t rvluo(r)akaEtExT$
+oTrro  r3erc3 j recuet)(a kau
+Tv edtah .ar r.arPoo.tue usrorlu ta nkdinnE$x elPaW.oto.t(eWrjcouT kaoc.olvenhtroreraEntcx: terk.a.(2euhtdjeaPhT6cruru6hrty..ecno)rcoa.:lye
+ dE6r2xid jTdha Pde4uceo vriea osu)n:add1al.t
+aoeaaroet:pr..re 4os.T jecj9oau.a hcvrtv)l
+.Erxl6o.u x tjr2jPeoa4tai evo.la)svl c.a.
+tr.tuto1t aeet n1m ncpug l4cjoau9. .torvrTorrha)ra$RW.e
+Tgaor(xrov.haaj .ikpelT adv.a.v h.roar:h6u.arc.rroetln2tanutncd a 4m(njPu E)l
+reoEuatxrneE.he R aruxtrce.eted e.aicTaudhuldjapta..trPto vrcoeoooarouajra:nn.dlrEPrc 7vta4(uuox.8.ETrnoecclWrh)lxa
+neg[atkeolcERROR] Syntax error in report template: The following has evaluated to null or missing:
+==> formatter.renderHeader  [in template "freemarker/home.ftl" at line 137, column 58]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+        - Failed at: ${formatter.htmlCompatibleStoryTitle(...  [in template "freemarker/home.ftl" at line 137, column 21]
+----
+        - Failed at: ${formatter.htmlCompatibleStoryTitle(...  [in template "freemarker/home.ftl" at line 137, column 21]
+
+hrava:748hRe)r.java:624lt  .d.ThreadPoolExecutor$Worker.runor$W (((T)o .T(j
+pr )   hraTReportExecutor.java:12T.run (
+oe(ar
+htear[t ERROR] Syntax error in report template: The following has evaluated to null or missing:
+==> formatter.renderHeader  [in template "freemarker/home.ftl" at line 137, column 58]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+        - Failed at: ${formatter.htmlCompatibleStoryTitle(...  [in template "freemarker/home.ftl" at line 137, column 21]
+----
+        - Failed at: ${formatter.htmlCompatibleStoryTitle(...  [in template "freemarker/home.ftl" at line 137, column 21]
+
+jla eE  xajPhProade c.voeooaujalaE.attlovlxdeaa rE.j:ncPug7ajxav4.tooT8avehro.).acru:u
+t1teor2ivE.a[lajxERROR] Syntax error in report template: The following has evaluated to null or missing:
+==> formatter.renderHeader  [in template "freemarker/home.ftl" at line 137, column 58]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+        - Failed at: ${formatter.htmlCompatibleStoryTitle(...  [in template "freemarker/home.ftl" at line 137, column 21]
+----
+        - Failed at: ${formatter.htmlCompatibleStoryTitle(...  [in template "freemarker/home.ftl" at line 137, column 21]
+
+ed.r.concurrent.FutureTask.run:624a (u)cva:1149)
+)r( FutureTask.java:266
+).
+T    j
+)a ata rava:624 ead.java:748)   tt
+   aa
+tvjj a[ ERROR] Syntax error in report template: The following has evaluated to null or missing:
+==> formatter.renderHeader  [in template "freemarker/home.ftl" at line 137, column 58]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+        - Failed at: ${formatter.htmlCompatibleStoryTitle(...  [in template "freemarker/home.ftl" at line 137, column 21]
+----
+        - Failed at: ${formatter.htmlCompatibleStoryTitle(...  [in template "freemarker/home.ftl" at line 137, column 21]
+
+a va a.jvaau.ttvaiu al...jtauclotviainacl.ll.unrca.norgengc.cn.tuTohr.TFrrneeuhtnacdturr..urTeeThurnraase r(akdeTd..rPhnusnurnolExadt.jaec (uuv.atFnuto:7T4rur e8.hT()rareT
+har[WkdERROR] Syntax error in report template: The following has evaluated to null or missing:
+==> formatter.renderHeader  [in template "freemarker/home.ftl" at line 137, column 58]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+        - Failed at: ${formatter.htmlCompatibleStoryTitle(...  [in template "freemarker/home.ftl" at line 137, column 21]
+----
+        - Failed at: ${formatter.htmlCompatibleStoryTitle(...  [in template "freemarker/home.ftl" at line 137, column 21]
+
+.oeP[WARNING] Failed to generate report for TagReportingTask for feature:Search - java.util.concurrent.ExecutionException: java.lang.RuntimeException: Failed to merge template: Failed to process FreeMarker template
+net.thucydides.core.reports.html.Merger$MergeBuilder.to(Merger.java:39)
+aoirdava.util.concurrent.ExokeadvrleE a.:(xc2j6Teuch6arutte)v
+p P$oWo : oonrl 7EkEexa4terx8 c.ce)jurta
+voura[t.nERROR] Syntax error in report template: The following has evaluated to null or missing:
+==> formatter.renderHeader  [in template "freemarker/home.ftl" at line 137, column 58]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+        - Failed at: ${formatter.htmlCompatibleStoryTitle(...  [in template "freemarker/home.ftl" at line 137, column 21]
+----
+        - Failed at: ${formatter.htmlCompatibleStoryTitle(...  [in template "freemarker/home.ftl" at line 137, column 21]
+
+lEa.iuTahtoirveln.aa::cdo 1nPoj1c4aov9ual.)r
+c nxg e .eR nucnatttu. itmjTaeoEvhaxrc.rue.pteitjila.oancdo:v nPcFaauori:lroee6dnlt 2t.ETo4 hxe)mre
+reg u ea  t tdoaePmtrpol .jaotarvel:au. EFlnaaxinWglee.oTdc hrrtuoeka tpde.roorunrcesrs  ( $(TFWoThrrhrreeaekadPoolExecu:hrr7ava:1149deer.run .jMa()vaTa
+oroa8 deP)
+ [l ERROR] Syntax error in report template: The following has evaluated to null or missing:
+==> formatter.renderHeader  [in template "freemarker/home.ftl" at line 137, column 58]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+        - Failed at: ${formatter.htmlCompatibleStoryTitle(...  [in template "freemarker/home.ftl" at line 137, column 21]
+----
+        - Failed at: ${formatter.htmlCompatibleStoryTitle(...  [in template "freemarker/home.ftl" at line 137, column 21]
+
+ Extaecutor.ejtam va:624pjava.utill).atec
+oncurrent.ThreadPoolExecutor$Work
+ Tr . r u n   ( aTahtrteadPoolExecuto  jrajv.aa.jlva.util.concurrent.Futaavnug.aTrh:read.runeTask.report624 )(
+( hFutureTask.ja re v aaadt:. 1java.lang.Thread.runjava:7482)
+[2 ERROR] Syntax error in report template: The following has evaluated to null or missing:
+==> formatter.renderHeader  [in template "freemarker/home.ftl" at line 137, column 58]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+        - Failed at: ${formatter.htmlCompatibleStoryTitle(...  [in template "freemarker/home.ftl" at line 137, column 21]
+----
+        - Failed at: ${formatter.htmlCompatibleStoryTitle(...  [in template "freemarker/home.ftl" at line 137, column 21]
+
+T)
+t r e ad .jaatva:748 java).u
+i[ERROR] Syntax error in report template: The following has evaluated to null or missing:
+==> formatter.renderHeader  [in template "freemarker/home.ftl" at line 137, column 58]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+        - Failed at: ${formatter.htmlCompatibleStoryTitle(...  [in template "freemarker/home.ftl" at line 137, column 21]
+----
+        - Failed at: ${formatter.htmlCompatibleStoryTitle(...  [in template "freemarker/home.ftl" at line 137, column 21]
+
+l.concurrent.FutureTask.get (FutureTask.java:206)
+    at net.thucydides.core.reports.html.Reporter.generateReports (Reporter.java:56)
+    at net.thucydides.core.reports.html.Reporter.generateReportsFor (Reporter.java:32)
+    at net.thucydides.core.reports.html.HtmlAggregateStoryReporter.generateReportsForTestResultsIn (HtmlAggregateStoryReporter.java:212)
+    at net.thucydides.core.reports.html.HtmlAggregateStoryReporter.generateReportsForTestResultsFrom (HtmlAggregateStoryReporter.java:136)
+    at net.serenitybdd.maven.plugins.SerenityAggregatorMojo.generateHtmlStoryReports (SerenityAggregatorMojo.java:250)
+    at net.serenitybdd.maven.plugins.SerenityAggregatorMojo.execute (SerenityAggregatorMojo.java:193)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:137)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:210)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:156)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:148)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:117)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:81)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:56)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:128)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:305)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:192)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:105)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:957)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:289)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:193)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:498)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:282)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:225)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:406)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:347)
+Caused by: java.lang.RuntimeException: Failed to merge template: Failed to process FreeMarker template
+    at net.thucydides.core.reports.html.Merger$MergeBuilder.to (Merger.java:39)
+    at net.thucydides.core.reports.html.BaseReportingTask.generateReportPage (BaseReportingTask.java:45)
+    at net.thucydides.core.reports.html.TagReportingTask.generateTagReport (TagReportingTask.java:83)
+    at net.thucydides.core.reports.html.TagReportingTask.generateReports (TagReportingTask.java:64)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:33)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:12)
+    at java.util.concurrent.FutureTask.run (FutureTask.java:266)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
+    at java.lang.Thread.run (Thread.java:748)
+Caused by: net.thucydides.core.reports.templates.TemplateMergeException: Failed to process FreeMarker template
+    at net.thucydides.core.reports.templates.FreemarkerReportTemplate.merge (FreemarkerReportTemplate.java:42)
+    at net.thucydides.core.reports.html.Merger$MergeBuilder.to (Merger.java:37)
+    at net.thucydides.core.reports.html.BaseReportingTask.generateReportPage (BaseReportingTask.java:45)
+    at net.thucydides.core.reports.html.TagReportingTask.generateTagReport (TagReportingTask.java:83)
+    at net.thucydides.core.reports.html.TagReportingTask.generateReports (TagReportingTask.java:64)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:33)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:12)
+    at java.util.concurrent.FutureTask.run (FutureTask.java:266)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
+    at java.lang.Thread.run (Thread.java:748)
+Caused by: freemarker.core.InvalidReferenceException: The following has evaluated to null or missing:
+==> formatter.renderHeader  [in template "freemarker/home.ftl" at line 137, column 58]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+        - Failed at: ${formatter.htmlCompatibleStoryTitle(...  [in template "freemarker/home.ftl" at line 137, column 21]
+----
+    at freemarker.core.InvalidReferenceException.getInstance (InvalidReferenceException.java:134)
+    at freemarker.core.UnexpectedTypeException.newDescriptionBuilder (UnexpectedTypeException.java:85)
+    at freemarker.core.UnexpectedTypeException.<init> (UnexpectedTypeException.java:63)
+    at freemarker.core.NonMethodException.<init> (NonMethodException.java:74)
+    at freemarker.core.MethodCall._eval (MethodCall.java:67)
+    at freemarker.core.Expression.eval (Expression.java:101)
+    at freemarker.core.ListLiteral.getModelList (ListLiteral.java:93)
+    at freemarker.core.MethodCall._eval (MethodCall.java:60)
+    at freemarker.core.Expression.eval (Expression.java:101)
+    at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup (DollarVariable.java:100)
+    at freemarker.core.DollarVariable.accept (DollarVariable.java:63)
+    at freemarker.core.Environment.visit (Environment.java:331)
+    at freemarker.core.Environment.visit (Environment.java:337)
+    at freemarker.core.Environment.visit (Environment.java:337)
+    at freemarker.core.Environment.process (Environment.java:310)
+    at net.thucydides.core.reports.templates.FreemarkerReportTemplate.merge (FreemarkerReportTemplate.java:39)
+    at net.thucydides.core.reports.html.Merger$MergeBuilder.to (Merger.java:37)
+    at net.thucydides.core.reports.html.BaseReportingTask.generateReportPage (BaseReportingTask.java:45)
+    at net.thucydides.core.reports.html.TagReportingTask.generateTagReport (TagReportingTask.java:83)
+    at net.thucydides.core.reports.html.TagReportingTask.generateReports (TagReportingTask.java:64)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:33)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:12)
+    at java.util.concurrent.FutureTask.run (FutureTask.java:266)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
+    at java.lang.Thread.run (Thread.java:748)
+[WARNING] Failed to generate report for TagReportingTask for story:Search/Search demo three by keyword story - java.util.concurrent.ExecutionException: java.lang.RuntimeException: Failed to merge template: Failed to process FreeMarker template
+net.thucydides.core.reports.html.Merger$MergeBuilder.to(Merger.java:39)
+java.util.concurrent.ExecutionException: java.lang.RuntimeException: Failed to merge template: Failed to process FreeMarker template
+    at java.util.concurrent.FutureTask.report (FutureTask.java:122)
+    at java.util.concurrent.FutureTask.get (FutureTask.java:206)
+    at net.thucydides.core.reports.html.Reporter.generateReports (Reporter.java:56)
+    at net.thucydides.core.reports.html.Reporter.generateReportsFor (Reporter.java:32)
+    at net.thucydides.core.reports.html.HtmlAggregateStoryReporter.generateReportsForTestResultsIn (HtmlAggregateStoryReporter.java:212)
+    at net.thucydides.core.reports.html.HtmlAggregateStoryReporter.generateReportsForTestResultsFrom (HtmlAggregateStoryReporter.java:136)
+    at net.serenitybdd.maven.plugins.SerenityAggregatorMojo.generateHtmlStoryReports (SerenityAggregatorMojo.java:250)
+    at net.serenitybdd.maven.plugins.SerenityAggregatorMojo.execute (SerenityAggregatorMojo.java:193)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:137)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:210)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:156)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:148)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:117)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:81)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:56)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:128)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:305)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:192)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:105)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:957)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:289)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:193)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:498)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:282)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:225)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:406)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:347)
+Caused by: java.lang.RuntimeException: Failed to merge template: Failed to process FreeMarker template
+    at net.thucydides.core.reports.html.Merger$MergeBuilder.to (Merger.java:39)
+    at net.thucydides.core.reports.html.BaseReportingTask.generateReportPage (BaseReportingTask.java:45)
+    at net.thucydides.core.reports.html.TagReportingTask.generateTagReport (TagReportingTask.java:83)
+    at net.thucydides.core.reports.html.TagReportingTask.generateReports (TagReportingTask.java:64)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:33)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:12)
+    at java.util.concurrent.FutureTask.run (FutureTask.java:266)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
+    at java.lang.Thread.run (Thread.java:748)
+Caused by: net.thucydides.core.reports.templates.TemplateMergeException: Failed to process FreeMarker template
+    at net.thucydides.core.reports.templates.FreemarkerReportTemplate.merge (FreemarkerReportTemplate.java:42)
+    at net.thucydides.core.reports.html.Merger$MergeBuilder.to (Merger.java:37)
+    at net.thucydides.core.reports.html.BaseReportingTask.generateReportPage (BaseReportingTask.java:45)
+    at net.thucydides.core.reports.html.TagReportingTask.generateTagReport (TagReportingTask.java:83)
+    at net.thucydides.core.reports.html.TagReportingTask.generateReports (TagReportingTask.java:64)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:33)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:12)
+    at java.util.concurrent.FutureTask.run (FutureTask.java:266)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
+    at java.lang.Thread.run (Thread.java:748)
+Caused by: freemarker.core.InvalidReferenceException: The following has evaluated to null or missing:
+==> formatter.renderHeader  [in template "freemarker/home.ftl" at line 137, column 58]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+        - Failed at: ${formatter.htmlCompatibleStoryTitle(...  [in template "freemarker/home.ftl" at line 137, column 21]
+----
+    at freemarker.core.InvalidReferenceException.getInstance (InvalidReferenceException.java:134)
+    at freemarker.core.UnexpectedTypeException.newDescriptionBuilder (UnexpectedTypeException.java:85)
+    at freemarker.core.UnexpectedTypeException.<init> (UnexpectedTypeException.java:63)
+    at freemarker.core.NonMethodException.<init> (NonMethodException.java:74)
+    at freemarker.core.MethodCall._eval (MethodCall.java:67)
+    at freemarker.core.Expression.eval (Expression.java:101)
+    at freemarker.core.ListLiteral.getModelList (ListLiteral.java:93)
+    at freemarker.core.MethodCall._eval (MethodCall.java:60)
+    at freemarker.core.Expression.eval (Expression.java:101)
+    at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup (DollarVariable.java:100)
+    at freemarker.core.DollarVariable.accept (DollarVariable.java:63)
+    at freemarker.core.Environment.visit (Environment.java:331)
+    at freemarker.core.Environment.visit (Environment.java:337)
+    at freemarker.core.Environment.visit (Environment.java:337)
+    at freemarker.core.Environment.process (Environment.java:310)
+    at net.thucydides.core.reports.templates.FreemarkerReportTemplate.merge (FreemarkerReportTemplate.java:39)
+    at net.thucydides.core.reports.html.Merger$MergeBuilder.to (Merger.java:37)
+    at net.thucydides.core.reports.html.BaseReportingTask.generateReportPage (BaseReportingTask.java:45)
+    at net.thucydides.core.reports.html.TagReportingTask.generateTagReport (TagReportingTask.java:83)
+    at net.thucydides.core.reports.html.TagReportingTask.generateReports (TagReportingTask.java:64)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:33)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:12)
+    at java.util.concurrent.FutureTask.run (FutureTask.java:266)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
+    at java.lang.Thread.run (Thread.java:748)
+[WARNING] Failed to generate report for TagReportingTask for story:Search/Search demo one by keyword story - java.util.concurrent.ExecutionException: java.lang.RuntimeException: Failed to merge template: Failed to process FreeMarker template
+net.thucydides.core.reports.html.Merger$MergeBuilder.to(Merger.java:39)
+java.util.concurrent.ExecutionException: java.lang.RuntimeException: Failed to merge template: Failed to process FreeMarker template
+    at java.util.concurrent.FutureTask.report (FutureTask.java:122)
+    at java.util.concurrent.FutureTask.get (FutureTask.java:206)
+    at net.thucydides.core.reports.html.Reporter.generateReports (Reporter.java:56)
+    at net.thucydides.core.reports.html.Reporter.generateReportsFor (Reporter.java:32)
+    at net.thucydides.core.reports.html.HtmlAggregateStoryReporter.generateReportsForTestResultsIn (HtmlAggregateStoryReporter.java:212)
+    at net.thucydides.core.reports.html.HtmlAggregateStoryReporter.generateReportsForTestResultsFrom (HtmlAggregateStoryReporter.java:136)
+    at net.serenitybdd.maven.plugins.SerenityAggregatorMojo.generateHtmlStoryReports (SerenityAggregatorMojo.java:250)
+    at net.serenitybdd.maven.plugins.SerenityAggregatorMojo.execute (SerenityAggregatorMojo.java:193)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:137)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:210)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:156)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:148)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:117)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:81)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:56)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:128)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:305)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:192)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:105)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:957)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:289)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:193)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:498)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:282)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:225)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:406)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:347)
+Caused by: java.lang.RuntimeException: Failed to merge template: Failed to process FreeMarker template
+    at net.thucydides.core.reports.html.Merger$MergeBuilder.to (Merger.java:39)
+    at net.thucydides.core.reports.html.BaseReportingTask.generateReportPage (BaseReportingTask.java:45)
+    at net.thucydides.core.reports.html.TagReportingTask.generateTagReport (TagReportingTask.java:83)
+    at net.thucydides.core.reports.html.TagReportingTask.generateReports (TagReportingTask.java:64)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:33)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:12)
+    at java.util.concurrent.FutureTask.run (FutureTask.java:266)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
+    at java.lang.Thread.run (Thread.java:748)
+Caused by: net.thucydides.core.reports.templates.TemplateMergeException: Failed to process FreeMarker template
+    at net.thucydides.core.reports.templates.FreemarkerReportTemplate.merge (FreemarkerReportTemplate.java:42)
+    at net.thucydides.core.reports.html.Merger$MergeBuilder.to (Merger.java:37)
+    at net.thucydides.core.reports.html.BaseReportingTask.generateReportPage (BaseReportingTask.java:45)
+    at net.thucydides.core.reports.html.TagReportingTask.generateTagReport (TagReportingTask.java:83)
+    at net.thucydides.core.reports.html.TagReportingTask.generateReports (TagReportingTask.java:64)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:33)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:12)
+    at java.util.concurrent.FutureTask.run (FutureTask.java:266)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
+    at java.lang.Thread.run (Thread.java:748)
+Caused by: freemarker.core.InvalidReferenceException: The following has evaluated to null or missing:
+==> formatter.renderHeader  [in template "freemarker/home.ftl" at line 137, column 58]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+        - Failed at: ${formatter.htmlCompatibleStoryTitle(...  [in template "freemarker/home.ftl" at line 137, column 21]
+----
+    at freemarker.core.InvalidReferenceException.getInstance (InvalidReferenceException.java:134)
+    at freemarker.core.UnexpectedTypeException.newDescriptionBuilder (UnexpectedTypeException.java:85)
+    at freemarker.core.UnexpectedTypeException.<init> (UnexpectedTypeException.java:63)
+    at freemarker.core.NonMethodException.<init> (NonMethodException.java:74)
+    at freemarker.core.MethodCall._eval (MethodCall.java:67)
+    at freemarker.core.Expression.eval (Expression.java:101)
+    at freemarker.core.ListLiteral.getModelList (ListLiteral.java:93)
+    at freemarker.core.MethodCall._eval (MethodCall.java:60)
+    at freemarker.core.Expression.eval (Expression.java:101)
+    at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup (DollarVariable.java:100)
+    at freemarker.core.DollarVariable.accept (DollarVariable.java:63)
+    at freemarker.core.Environment.visit (Environment.java:331)
+    at freemarker.core.Environment.visit (Environment.java:337)
+    at freemarker.core.Environment.visit (Environment.java:337)
+    at freemarker.core.Environment.process (Environment.java:310)
+    at net.thucydides.core.reports.templates.FreemarkerReportTemplate.merge (FreemarkerReportTemplate.java:39)
+    at net.thucydides.core.reports.html.Merger$MergeBuilder.to (Merger.java:37)
+    at net.thucydides.core.reports.html.BaseReportingTask.generateReportPage (BaseReportingTask.java:45)
+    at net.thucydides.core.reports.html.TagReportingTask.generateTagReport (TagReportingTask.java:83)
+    at net.thucydides.core.reports.html.TagReportingTask.generateReports (TagReportingTask.java:64)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:33)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:12)
+    at java.util.concurrent.FutureTask.run (FutureTask.java:266)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
+    at java.lang.Thread.run (Thread.java:748)
+[WARNING] Failed to generate report for TagReportingTask for story:Search/Search demo two by keyword story - java.util.concurrent.ExecutionException: java.lang.RuntimeException: Failed to merge template: Failed to process FreeMarker template
+net.thucydides.core.reports.html.Merger$MergeBuilder.to(Merger.java:39)
+java.util.concurrent.ExecutionException: java.lang.RuntimeException: Failed to merge template: Failed to process FreeMarker template
+    at java.util.concurrent.FutureTask.report (FutureTask.java:122)
+    at java.util.concurrent.FutureTask.get (FutureTask.java:206)
+    at net.thucydides.core.reports.html.Reporter.generateReports (Reporter.java:56)
+    at net.thucydides.core.reports.html.Reporter.generateReportsFor (Reporter.java:32)
+    at net.thucydides.core.reports.html.HtmlAggregateStoryReporter.generateReportsForTestResultsIn (HtmlAggregateStoryReporter.java:212)
+    at net.thucydides.core.reports.html.HtmlAggregateStoryReporter.generateReportsForTestResultsFrom (HtmlAggregateStoryReporter.java:136)
+    at net.serenitybdd.maven.plugins.SerenityAggregatorMojo.generateHtmlStoryReports (SerenityAggregatorMojo.java:250)
+    at net.serenitybdd.maven.plugins.SerenityAggregatorMojo.execute (SerenityAggregatorMojo.java:193)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:137)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:210)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:156)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:148)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:117)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:81)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:56)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:128)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:305)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:192)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:105)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:957)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:289)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:193)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:498)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:282)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:225)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:406)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:347)
+Caused by: java.lang.RuntimeException: Failed to merge template: Failed to process FreeMarker template
+    at net.thucydides.core.reports.html.Merger$MergeBuilder.to (Merger.java:39)
+    at net.thucydides.core.reports.html.BaseReportingTask.generateReportPage (BaseReportingTask.java:45)
+    at net.thucydides.core.reports.html.TagReportingTask.generateTagReport (TagReportingTask.java:83)
+    at net.thucydides.core.reports.html.TagReportingTask.generateReports (TagReportingTask.java:64)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:33)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:12)
+    at java.util.concurrent.FutureTask.run (FutureTask.java:266)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
+    at java.lang.Thread.run (Thread.java:748)
+Caused by: net.thucydides.core.reports.templates.TemplateMergeException: Failed to process FreeMarker template
+    at net.thucydides.core.reports.templates.FreemarkerReportTemplate.merge (FreemarkerReportTemplate.java:42)
+    at net.thucydides.core.reports.html.Merger$MergeBuilder.to (Merger.java:37)
+    at net.thucydides.core.reports.html.BaseReportingTask.generateReportPage (BaseReportingTask.java:45)
+    at net.thucydides.core.reports.html.TagReportingTask.generateTagReport (TagReportingTask.java:83)
+    at net.thucydides.core.reports.html.TagReportingTask.generateReports (TagReportingTask.java:64)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:33)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:12)
+    at java.util.concurrent.FutureTask.run (FutureTask.java:266)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
+    at java.lang.Thread.run (Thread.java:748)
+Caused by: freemarker.core.InvalidReferenceException: The following has evaluated to null or missing:
+==> formatter.renderHeader  [in template "freemarker/home.ftl" at line 137, column 58]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+        - Failed at: ${formatter.htmlCompatibleStoryTitle(...  [in template "freemarker/home.ftl" at line 137, column 21]
+----
+    at freemarker.core.InvalidReferenceException.getInstance (InvalidReferenceException.java:134)
+    at freemarker.core.UnexpectedTypeException.newDescriptionBuilder (UnexpectedTypeException.java:85)
+    at freemarker.core.UnexpectedTypeException.<init> (UnexpectedTypeException.java:63)
+    at freemarker.core.NonMethodException.<init> (NonMethodException.java:74)
+    at freemarker.core.MethodCall._eval (MethodCall.java:67)
+    at freemarker.core.Expression.eval (Expression.java:101)
+    at freemarker.core.ListLiteral.getModelList (ListLiteral.java:93)
+    at freemarker.core.MethodCall._eval (MethodCall.java:60)
+    at freemarker.core.Expression.eval (Expression.java:101)
+    at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup (DollarVariable.java:100)
+    at freemarker.core.DollarVariable.accept (DollarVariable.java:63)
+    at freemarker.core.Environment.visit (Environment.java:331)
+    at freemarker.core.Environment.visit (Environment.java:337)
+    at freemarker.core.Environment.visit (Environment.java:337)
+    at freemarker.core.Environment.process (Environment.java:310)
+    at net.thucydides.core.reports.templates.FreemarkerReportTemplate.merge (FreemarkerReportTemplate.java:39)
+    at net.thucydides.core.reports.html.Merger$MergeBuilder.to (Merger.java:37)
+    at net.thucydides.core.reports.html.BaseReportingTask.generateReportPage (BaseReportingTask.java:45)
+    at net.thucydides.core.reports.html.TagReportingTask.generateTagReport (TagReportingTask.java:83)
+    at net.thucydides.core.reports.html.TagReportingTask.generateReports (TagReportingTask.java:64)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:33)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:12)
+    at java.util.concurrent.FutureTask.run (FutureTask.java:266)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
+    at java.lang.Thread.run (Thread.java:748)
+[WARNING] Failed to generate report for TagReportingTask for story:Search/Search demo two by keyword story - java.util.concurrent.ExecutionException: java.lang.RuntimeException: Failed to merge template: Failed to process FreeMarker template
+net.thucydides.core.reports.html.Merger$MergeBuilder.to(Merger.java:39)
+java.util.concurrent.ExecutionException: java.lang.RuntimeException: Failed to merge template: Failed to process FreeMarker template
+    at java.util.concurrent.FutureTask.report (FutureTask.java:122)
+    at java.util.concurrent.FutureTask.get (FutureTask.java:206)
+    at net.thucydides.core.reports.html.Reporter.generateReports (Reporter.java:56)
+    at net.thucydides.core.reports.html.Reporter.generateReportsFor (Reporter.java:32)
+    at net.thucydides.core.reports.html.HtmlAggregateStoryReporter.generateReportsForTestResultsIn (HtmlAggregateStoryReporter.java:212)
+    at net.thucydides.core.reports.html.HtmlAggregateStoryReporter.generateReportsForTestResultsFrom (HtmlAggregateStoryReporter.java:136)
+    at net.serenitybdd.maven.plugins.SerenityAggregatorMojo.generateHtmlStoryReports (SerenityAggregatorMojo.java:250)
+    at net.serenitybdd.maven.plugins.SerenityAggregatorMojo.execute (SerenityAggregatorMojo.java:193)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:137)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:210)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:156)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:148)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:117)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:81)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:56)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:128)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:305)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:192)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:105)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:957)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:289)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:193)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:498)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:282)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:225)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:406)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:347)
+Caused by: java.lang.RuntimeException: Failed to merge template: Failed to process FreeMarker template
+    at net.thucydides.core.reports.html.Merger$MergeBuilder.to (Merger.java:39)
+    at net.thucydides.core.reports.html.BaseReportingTask.generateReportPage (BaseReportingTask.java:45)
+    at net.thucydides.core.reports.html.TagReportingTask.generateTagReport (TagReportingTask.java:83)
+    at net.thucydides.core.reports.html.TagReportingTask.generateReports (TagReportingTask.java:64)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:33)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:12)
+    at java.util.concurrent.FutureTask.run (FutureTask.java:266)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
+    at java.lang.Thread.run (Thread.java:748)
+Caused by: net.thucydides.core.reports.templates.TemplateMergeException: Failed to process FreeMarker template
+    at net.thucydides.core.reports.templates.FreemarkerReportTemplate.merge (FreemarkerReportTemplate.java:42)
+    at net.thucydides.core.reports.html.Merger$MergeBuilder.to (Merger.java:37)
+    at net.thucydides.core.reports.html.BaseReportingTask.generateReportPage (BaseReportingTask.java:45)
+    at net.thucydides.core.reports.html.TagReportingTask.generateTagReport (TagReportingTask.java:83)
+    at net.thucydides.core.reports.html.TagReportingTask.generateReports (TagReportingTask.java:64)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:33)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:12)
+    at java.util.concurrent.FutureTask.run (FutureTask.java:266)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
+    at java.lang.Thread.run (Thread.java:748)
+Caused by: freemarker.core.InvalidReferenceException: The following has evaluated to null or missing:
+==> formatter.renderHeader  [in template "freemarker/home.ftl" at line 137, column 58]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+        - Failed at: ${formatter.htmlCompatibleStoryTitle(...  [in template "freemarker/home.ftl" at line 137, column 21]
+----
+    at freemarker.core.InvalidReferenceException.getInstance (InvalidReferenceException.java:134)
+    at freemarker.core.UnexpectedTypeException.newDescriptionBuilder (UnexpectedTypeException.java:85)
+    at freemarker.core.UnexpectedTypeException.<init> (UnexpectedTypeException.java:63)
+    at freemarker.core.NonMethodException.<init> (NonMethodException.java:74)
+    at freemarker.core.MethodCall._eval (MethodCall.java:67)
+    at freemarker.core.Expression.eval (Expression.java:101)
+    at freemarker.core.ListLiteral.getModelList (ListLiteral.java:93)
+    at freemarker.core.MethodCall._eval (MethodCall.java:60)
+    at freemarker.core.Expression.eval (Expression.java:101)
+    at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup (DollarVariable.java:100)
+    at freemarker.core.DollarVariable.accept (DollarVariable.java:63)
+    at freemarker.core.Environment.visit (Environment.java:331)
+    at freemarker.core.Environment.visit (Environment.java:337)
+    at freemarker.core.Environment.visit (Environment.java:337)
+    at freemarker.core.Environment.process (Environment.java:310)
+    at net.thucydides.core.reports.templates.FreemarkerReportTemplate.merge (FreemarkerReportTemplate.java:39)
+    at net.thucydides.core.reports.html.Merger$MergeBuilder.to (Merger.java:37)
+    at net.thucydides.core.reports.html.BaseReportingTask.generateReportPage (BaseReportingTask.java:45)
+    at net.thucydides.core.reports.html.TagReportingTask.generateTagReport (TagReportingTask.java:83)
+    at net.thucydides.core.reports.html.TagReportingTask.generateReports (TagReportingTask.java:64)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:33)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:12)
+    at java.util.concurrent.FutureTask.run (FutureTask.java:266)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
+    at java.lang.Thread.run (Thread.java:748)
+[WARNING] Failed to generate report for TagReportingTask for feature:Search - java.util.concurrent.ExecutionException: java.lang.RuntimeException: Failed to merge template: Failed to process FreeMarker template
+net.thucydides.core.reports.html.Merger$MergeBuilder.to(Merger.java:39)
+java.util.concurrent.ExecutionException: java.lang.RuntimeException: Failed to merge template: Failed to process FreeMarker template
+    at java.util.concurrent.FutureTask.report (FutureTask.java:122)
+    at java.util.concurrent.FutureTask.get (FutureTask.java:206)
+    at net.thucydides.core.reports.html.Reporter.generateReports (Reporter.java:56)
+    at net.thucydides.core.reports.html.Reporter.generateReportsFor (Reporter.java:32)
+    at net.thucydides.core.reports.html.HtmlAggregateStoryReporter.generateReportsForTestResultsIn (HtmlAggregateStoryReporter.java:212)
+    at net.thucydides.core.reports.html.HtmlAggregateStoryReporter.generateReportsForTestResultsFrom (HtmlAggregateStoryReporter.java:136)
+    at net.serenitybdd.maven.plugins.SerenityAggregatorMojo.generateHtmlStoryReports (SerenityAggregatorMojo.java:250)
+    at net.serenitybdd.maven.plugins.SerenityAggregatorMojo.execute (SerenityAggregatorMojo.java:193)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:137)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:210)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:156)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:148)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:117)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:81)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:56)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:128)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:305)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:192)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:105)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:957)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:289)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:193)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:498)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:282)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:225)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:406)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:347)
+Caused by: java.lang.RuntimeException: Failed to merge template: Failed to process FreeMarker template
+    at net.thucydides.core.reports.html.Merger$MergeBuilder.to (Merger.java:39)
+    at net.thucydides.core.reports.html.BaseReportingTask.generateReportPage (BaseReportingTask.java:45)
+    at net.thucydides.core.reports.html.TagReportingTask.generateTagReport (TagReportingTask.java:83)
+    at net.thucydides.core.reports.html.TagReportingTask.generateReports (TagReportingTask.java:64)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:33)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:12)
+    at java.util.concurrent.FutureTask.run (FutureTask.java:266)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
+    at java.lang.Thread.run (Thread.java:748)
+Caused by: net.thucydides.core.reports.templates.TemplateMergeException: Failed to process FreeMarker template
+    at net.thucydides.core.reports.templates.FreemarkerReportTemplate.merge (FreemarkerReportTemplate.java:42)
+    at net.thucydides.core.reports.html.Merger$MergeBuilder.to (Merger.java:37)
+    at net.thucydides.core.reports.html.BaseReportingTask.generateReportPage (BaseReportingTask.java:45)
+    at net.thucydides.core.reports.html.TagReportingTask.generateTagReport (TagReportingTask.java:83)
+    at net.thucydides.core.reports.html.TagReportingTask.generateReports (TagReportingTask.java:64)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:33)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:12)
+    at java.util.concurrent.FutureTask.run (FutureTask.java:266)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
+    at java.lang.Thread.run (Thread.java:748)
+Caused by: freemarker.core.InvalidReferenceException: The following has evaluated to null or missing:
+==> formatter.renderHeader  [in template "freemarker/home.ftl" at line 137, column 58]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+        - Failed at: ${formatter.htmlCompatibleStoryTitle(...  [in template "freemarker/home.ftl" at line 137, column 21]
+----
+    at freemarker.core.InvalidReferenceException.getInstance (InvalidReferenceException.java:134)
+    at freemarker.core.UnexpectedTypeException.newDescriptionBuilder (UnexpectedTypeException.java:85)
+    at freemarker.core.UnexpectedTypeException.<init> (UnexpectedTypeException.java:63)
+    at freemarker.core.NonMethodException.<init> (NonMethodException.java:74)
+    at freemarker.core.MethodCall._eval (MethodCall.java:67)
+    at freemarker.core.Expression.eval (Expression.java:101)
+    at freemarker.core.ListLiteral.getModelList (ListLiteral.java:93)
+    at freemarker.core.MethodCall._eval (MethodCall.java:60)
+    at freemarker.core.Expression.eval (Expression.java:101)
+    at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup (DollarVariable.java:100)
+    at freemarker.core.DollarVariable.accept (DollarVariable.java:63)
+    at freemarker.core.Environment.visit (Environment.java:331)
+    at freemarker.core.Environment.visit (Environment.java:337)
+    at freemarker.core.Environment.visit (Environment.java:337)
+    at freemarker.core.Environment.process (Environment.java:310)
+    at net.thucydides.core.reports.templates.FreemarkerReportTemplate.merge (FreemarkerReportTemplate.java:39)
+    at net.thucydides.core.reports.html.Merger$MergeBuilder.to (Merger.java:37)
+    at net.thucydides.core.reports.html.BaseReportingTask.generateReportPage (BaseReportingTask.java:45)
+    at net.thucydides.core.reports.html.TagReportingTask.generateTagReport (TagReportingTask.java:83)
+    at net.thucydides.core.reports.html.TagReportingTask.generateReports (TagReportingTask.java:64)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:33)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:12)
+    at java.util.concurrent.FutureTask.run (FutureTask.java:266)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
+    at java.lang.Thread.run (Thread.java:748)
+[WARNING] Failed to generate report for TagReportingTask for story:Search/Search demo one by keyword story - java.util.concurrent.ExecutionException: java.lang.RuntimeException: Failed to merge template: Failed to process FreeMarker template
+net.thucydides.core.reports.html.Merger$MergeBuilder.to(Merger.java:39)
+java.util.concurrent.ExecutionException: java.lang.RuntimeException: Failed to merge template: Failed to process FreeMarker template
+    at java.util.concurrent.FutureTask.report (FutureTask.java:122)
+    at java.util.concurrent.FutureTask.get (FutureTask.java:206)
+    at net.thucydides.core.reports.html.Reporter.generateReports (Reporter.java:56)
+    at net.thucydides.core.reports.html.Reporter.generateReportsFor (Reporter.java:32)
+    at net.thucydides.core.reports.html.HtmlAggregateStoryReporter.generateReportsForTestResultsIn (HtmlAggregateStoryReporter.java:212)
+    at net.thucydides.core.reports.html.HtmlAggregateStoryReporter.generateReportsForTestResultsFrom (HtmlAggregateStoryReporter.java:136)
+    at net.serenitybdd.maven.plugins.SerenityAggregatorMojo.generateHtmlStoryReports (SerenityAggregatorMojo.java:250)
+    at net.serenitybdd.maven.plugins.SerenityAggregatorMojo.execute (SerenityAggregatorMojo.java:193)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:137)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:210)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:156)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:148)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:117)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:81)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:56)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:128)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:305)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:192)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:105)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:957)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:289)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:193)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:498)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:282)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:225)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:406)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:347)
+Caused by: java.lang.RuntimeException: Failed to merge template: Failed to process FreeMarker template
+    at net.thucydides.core.reports.html.Merger$MergeBuilder.to (Merger.java:39)
+    at net.thucydides.core.reports.html.BaseReportingTask.generateReportPage (BaseReportingTask.java:45)
+    at net.thucydides.core.reports.html.TagReportingTask.generateTagReport (TagReportingTask.java:83)
+    at net.thucydides.core.reports.html.TagReportingTask.generateReports (TagReportingTask.java:64)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:33)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:12)
+    at java.util.concurrent.FutureTask.run (FutureTask.java:266)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
+    at java.lang.Thread.run (Thread.java:748)
+Caused by: net.thucydides.core.reports.templates.TemplateMergeException: Failed to process FreeMarker template
+    at net.thucydides.core.reports.templates.FreemarkerReportTemplate.merge (FreemarkerReportTemplate.java:42)
+    at net.thucydides.core.reports.html.Merger$MergeBuilder.to (Merger.java:37)
+    at net.thucydides.core.reports.html.BaseReportingTask.generateReportPage (BaseReportingTask.java:45)
+    at net.thucydides.core.reports.html.TagReportingTask.generateTagReport (TagReportingTask.java:83)
+    at net.thucydides.core.reports.html.TagReportingTask.generateReports (TagReportingTask.java:64)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:33)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:12)
+    at java.util.concurrent.FutureTask.run (FutureTask.java:266)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
+    at java.lang.Thread.run (Thread.java:748)
+Caused by: freemarker.core.InvalidReferenceException: The following has evaluated to null or missing:
+==> formatter.renderHeader  [in template "freemarker/home.ftl" at line 137, column 58]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+        - Failed at: ${formatter.htmlCompatibleStoryTitle(...  [in template "freemarker/home.ftl" at line 137, column 21]
+----
+    at freemarker.core.InvalidReferenceException.getInstance (InvalidReferenceException.java:134)
+    at freemarker.core.UnexpectedTypeException.newDescriptionBuilder (UnexpectedTypeException.java:85)
+    at freemarker.core.UnexpectedTypeException.<init> (UnexpectedTypeException.java:63)
+    at freemarker.core.NonMethodException.<init> (NonMethodException.java:74)
+    at freemarker.core.MethodCall._eval (MethodCall.java:67)
+    at freemarker.core.Expression.eval (Expression.java:101)
+    at freemarker.core.ListLiteral.getModelList (ListLiteral.java:93)
+    at freemarker.core.MethodCall._eval (MethodCall.java:60)
+    at freemarker.core.Expression.eval (Expression.java:101)
+    at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup (DollarVariable.java:100)
+    at freemarker.core.DollarVariable.accept (DollarVariable.java:63)
+    at freemarker.core.Environment.visit (Environment.java:331)
+    at freemarker.core.Environment.visit (Environment.java:337)
+    at freemarker.core.Environment.visit (Environment.java:337)
+    at freemarker.core.Environment.process (Environment.java:310)
+    at net.thucydides.core.reports.templates.FreemarkerReportTemplate.merge (FreemarkerReportTemplate.java:39)
+    at net.thucydides.core.reports.html.Merger$MergeBuilder.to (Merger.java:37)
+    at net.thucydides.core.reports.html.BaseReportingTask.generateReportPage (BaseReportingTask.java:45)
+    at net.thucydides.core.reports.html.TagReportingTask.generateTagReport (TagReportingTask.java:83)
+    at net.thucydides.core.reports.html.TagReportingTask.generateReports (TagReportingTask.java:64)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:33)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:12)
+    at java.util.concurrent.FutureTask.run (FutureTask.java:266)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
+    at java.lang.Thread.run (Thread.java:748)
+[WARNING] Failed to generate report for TagReportingTask for story:Search/Search demo three by keyword story - java.util.concurrent.ExecutionException: java.lang.RuntimeException: Failed to merge template: Failed to process FreeMarker template
+net.thucydides.core.reports.html.Merger$MergeBuilder.to(Merger.java:39)
+java.util.concurrent.ExecutionException: java.lang.RuntimeException: Failed to merge template: Failed to process FreeMarker template
+    at java.util.concurrent.FutureTask.report (FutureTask.java:122)
+    at java.util.concurrent.FutureTask.get (FutureTask.java:206)
+    at net.thucydides.core.reports.html.Reporter.generateReports (Reporter.java:56)
+    at net.thucydides.core.reports.html.Reporter.generateReportsFor (Reporter.java:32)
+    at net.thucydides.core.reports.html.HtmlAggregateStoryReporter.generateReportsForTestResultsIn (HtmlAggregateStoryReporter.java:212)
+    at net.thucydides.core.reports.html.HtmlAggregateStoryReporter.generateReportsForTestResultsFrom (HtmlAggregateStoryReporter.java:136)
+    at net.serenitybdd.maven.plugins.SerenityAggregatorMojo.generateHtmlStoryReports (SerenityAggregatorMojo.java:250)
+    at net.serenitybdd.maven.plugins.SerenityAggregatorMojo.execute (SerenityAggregatorMojo.java:193)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:137)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:210)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:156)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:148)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:117)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:81)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:56)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:128)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:305)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:192)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:105)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:957)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:289)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:193)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:498)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:282)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:225)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:406)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:347)
+Caused by: java.lang.RuntimeException: Failed to merge template: Failed to process FreeMarker template
+    at net.thucydides.core.reports.html.Merger$MergeBuilder.to (Merger.java:39)
+    at net.thucydides.core.reports.html.BaseReportingTask.generateReportPage (BaseReportingTask.java:45)
+    at net.thucydides.core.reports.html.TagReportingTask.generateTagReport (TagReportingTask.java:83)
+    at net.thucydides.core.reports.html.TagReportingTask.generateReports (TagReportingTask.java:64)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:33)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:12)
+    at java.util.concurrent.FutureTask.run (FutureTask.java:266)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
+    at java.lang.Thread.run (Thread.java:748)
+Caused by: net.thucydides.core.reports.templates.TemplateMergeException: Failed to process FreeMarker template
+    at net.thucydides.core.reports.templates.FreemarkerReportTemplate.merge (FreemarkerReportTemplate.java:42)
+    at net.thucydides.core.reports.html.Merger$MergeBuilder.to (Merger.java:37)
+    at net.thucydides.core.reports.html.BaseReportingTask.generateReportPage (BaseReportingTask.java:45)
+    at net.thucydides.core.reports.html.TagReportingTask.generateTagReport (TagReportingTask.java:83)
+    at net.thucydides.core.reports.html.TagReportingTask.generateReports (TagReportingTask.java:64)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:33)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:12)
+    at java.util.concurrent.FutureTask.run (FutureTask.java:266)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
+    at java.lang.Thread.run (Thread.java:748)
+Caused by: freemarker.core.InvalidReferenceException: The following has evaluated to null or missing:
+==> formatter.renderHeader  [in template "freemarker/home.ftl" at line 137, column 58]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+        - Failed at: ${formatter.htmlCompatibleStoryTitle(...  [in template "freemarker/home.ftl" at line 137, column 21]
+----
+    at freemarker.core.InvalidReferenceException.getInstance (InvalidReferenceException.java:134)
+    at freemarker.core.UnexpectedTypeException.newDescriptionBuilder (UnexpectedTypeException.java:85)
+    at freemarker.core.UnexpectedTypeException.<init> (UnexpectedTypeException.java:63)
+    at freemarker.core.NonMethodException.<init> (NonMethodException.java:74)
+    at freemarker.core.MethodCall._eval (MethodCall.java:67)
+    at freemarker.core.Expression.eval (Expression.java:101)
+    at freemarker.core.ListLiteral.getModelList (ListLiteral.java:93)
+    at freemarker.core.MethodCall._eval (MethodCall.java:60)
+    at freemarker.core.Expression.eval (Expression.java:101)
+    at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup (DollarVariable.java:100)
+    at freemarker.core.DollarVariable.accept (DollarVariable.java:63)
+    at freemarker.core.Environment.visit (Environment.java:331)
+    at freemarker.core.Environment.visit (Environment.java:337)
+    at freemarker.core.Environment.visit (Environment.java:337)
+    at freemarker.core.Environment.process (Environment.java:310)
+    at net.thucydides.core.reports.templates.FreemarkerReportTemplate.merge (FreemarkerReportTemplate.java:39)
+    at net.thucydides.core.reports.html.Merger$MergeBuilder.to (Merger.java:37)
+    at net.thucydides.core.reports.html.BaseReportingTask.generateReportPage (BaseReportingTask.java:45)
+    at net.thucydides.core.reports.html.TagReportingTask.generateTagReport (TagReportingTask.java:83)
+    at net.thucydides.core.reports.html.TagReportingTask.generateReports (TagReportingTask.java:64)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:33)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:12)
+    at java.util.concurrent.FutureTask.run (FutureTask.java:266)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
+    at java.lang.Thread.run (Thread.java:748)
+[WARNING] Failed to generate report for TagReportingTask for feature:Search - java.util.concurrent.ExecutionException: java.lang.RuntimeException: Failed to merge template: Failed to process FreeMarker template
+net.thucydides.core.reports.html.Merger$MergeBuilder.to(Merger.java:39)
+java.util.concurrent.ExecutionException: java.lang.RuntimeException: Failed to merge template: Failed to process FreeMarker template
+    at java.util.concurrent.FutureTask.report (FutureTask.java:122)
+    at java.util.concurrent.FutureTask.get (FutureTask.java:206)
+    at net.thucydides.core.reports.html.Reporter.generateReports (Reporter.java:56)
+    at net.thucydides.core.reports.html.Reporter.generateReportsFor (Reporter.java:32)
+    at net.thucydides.core.reports.html.HtmlAggregateStoryReporter.generateReportsForTestResultsIn (HtmlAggregateStoryReporter.java:212)
+    at net.thucydides.core.reports.html.HtmlAggregateStoryReporter.generateReportsForTestResultsFrom (HtmlAggregateStoryReporter.java:136)
+    at net.serenitybdd.maven.plugins.SerenityAggregatorMojo.generateHtmlStoryReports (SerenityAggregatorMojo.java:250)
+    at net.serenitybdd.maven.plugins.SerenityAggregatorMojo.execute (SerenityAggregatorMojo.java:193)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:137)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:210)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:156)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:148)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:117)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:81)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:56)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:128)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:305)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:192)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:105)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:957)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:289)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:193)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:498)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:282)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:225)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:406)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:347)
+Caused by: java.lang.RuntimeException: Failed to merge template: Failed to process FreeMarker template
+    at net.thucydides.core.reports.html.Merger$MergeBuilder.to (Merger.java:39)
+    at net.thucydides.core.reports.html.BaseReportingTask.generateReportPage (BaseReportingTask.java:45)
+    at net.thucydides.core.reports.html.TagReportingTask.generateTagReport (TagReportingTask.java:83)
+    at net.thucydides.core.reports.html.TagReportingTask.generateReports (TagReportingTask.java:64)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:33)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:12)
+    at java.util.concurrent.FutureTask.run (FutureTask.java:266)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
+    at java.lang.Thread.run (Thread.java:748)
+Caused by: net.thucydides.core.reports.templates.TemplateMergeException: Failed to process FreeMarker template
+    at net.thucydides.core.reports.templates.FreemarkerReportTemplate.merge (FreemarkerReportTemplate.java:42)
+    at net.thucydides.core.reports.html.Merger$MergeBuilder.to (Merger.java:37)
+    at net.thucydides.core.reports.html.BaseReportingTask.generateReportPage (BaseReportingTask.java:45)
+    at net.thucydides.core.reports.html.TagReportingTask.generateTagReport (TagReportingTask.java:83)
+    at net.thucydides.core.reports.html.TagReportingTask.generateReports (TagReportingTask.java:64)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:33)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:12)
+    at java.util.concurrent.FutureTask.run (FutureTask.java:266)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
+    at java.lang.Thread.run (Thread.java:748)
+Caused by: freemarker.core.InvalidReferenceException: The following has evaluated to null or missing:
+==> formatter.renderHeader  [in template "freemarker/home.ftl" at line 137, column 58]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+        - Failed at: ${formatter.htmlCompatibleStoryTitle(...  [in template "freemarker/home.ftl" at line 137, column 21]
+----
+    at freemarker.core.InvalidReferenceException.getInstance (InvalidReferenceException.java:134)
+    at freemarker.core.UnexpectedTypeException.newDescriptionBuilder (UnexpectedTypeException.java:85)
+    at freemarker.core.UnexpectedTypeException.<init> (UnexpectedTypeException.java:63)
+    at freemarker.core.NonMethodException.<init> (NonMethodException.java:74)
+    at freemarker.core.MethodCall._eval (MethodCall.java:67)
+    at freemarker.core.Expression.eval (Expression.java:101)
+    at freemarker.core.ListLiteral.getModelList (ListLiteral.java:93)
+    at freemarker.core.MethodCall._eval (MethodCall.java:60)
+    at freemarker.core.Expression.eval (Expression.java:101)
+    at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup (DollarVariable.java:100)
+    at freemarker.core.DollarVariable.accept (DollarVariable.java:63)
+    at freemarker.core.Environment.visit (Environment.java:331)
+    at freemarker.core.Environment.visit (Environment.java:337)
+    at freemarker.core.Environment.visit (Environment.java:337)
+    at freemarker.core.Environment.process (Environment.java:310)
+    at net.thucydides.core.reports.templates.FreemarkerReportTemplate.merge (FreemarkerReportTemplate.java:39)
+    at net.thucydides.core.reports.html.Merger$MergeBuilder.to (Merger.java:37)
+    at net.thucydides.core.reports.html.BaseReportingTask.generateReportPage (BaseReportingTask.java:45)
+    at net.thucydides.core.reports.html.TagReportingTask.generateTagReport (TagReportingTask.java:83)
+    at net.thucydides.core.reports.html.TagReportingTask.generateReports (TagReportingTask.java:64)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:33)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:12)
+    at java.util.concurrent.FutureTask.run (FutureTask.java:266)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
+    at java.lang.Thread.run (Thread.java:748)
+[WARNING] Failed to generate report for TagReportingTask for story:Search/Search demo one by keyword story - java.util.concurrent.ExecutionException: java.lang.RuntimeException: Failed to merge template: Failed to process FreeMarker template
+net.thucydides.core.reports.html.Merger$MergeBuilder.to(Merger.java:39)
+java.util.concurrent.ExecutionException: java.lang.RuntimeException: Failed to merge template: Failed to process FreeMarker template
+    at java.util.concurrent.FutureTask.report (FutureTask.java:122)
+    at java.util.concurrent.FutureTask.get (FutureTask.java:206)
+    at net.thucydides.core.reports.html.Reporter.generateReports (Reporter.java:56)
+    at net.thucydides.core.reports.html.Reporter.generateReportsFor (Reporter.java:32)
+    at net.thucydides.core.reports.html.HtmlAggregateStoryReporter.generateReportsForTestResultsIn (HtmlAggregateStoryReporter.java:212)
+    at net.thucydides.core.reports.html.HtmlAggregateStoryReporter.generateReportsForTestResultsFrom (HtmlAggregateStoryReporter.java:136)
+    at net.serenitybdd.maven.plugins.SerenityAggregatorMojo.generateHtmlStoryReports (SerenityAggregatorMojo.java:250)
+    at net.serenitybdd.maven.plugins.SerenityAggregatorMojo.execute (SerenityAggregatorMojo.java:193)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:137)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:210)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:156)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:148)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:117)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:81)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:56)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:128)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:305)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:192)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:105)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:957)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:289)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:193)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:498)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:282)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:225)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:406)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:347)
+Caused by: java.lang.RuntimeException: Failed to merge template: Failed to process FreeMarker template
+    at net.thucydides.core.reports.html.Merger$MergeBuilder.to (Merger.java:39)
+    at net.thucydides.core.reports.html.BaseReportingTask.generateReportPage (BaseReportingTask.java:45)
+    at net.thucydides.core.reports.html.TagReportingTask.generateTagReport (TagReportingTask.java:83)
+    at net.thucydides.core.reports.html.TagReportingTask.generateReports (TagReportingTask.java:64)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:33)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:12)
+    at java.util.concurrent.FutureTask.run (FutureTask.java:266)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
+    at java.lang.Thread.run (Thread.java:748)
+Caused by: net.thucydides.core.reports.templates.TemplateMergeException: Failed to process FreeMarker template
+    at net.thucydides.core.reports.templates.FreemarkerReportTemplate.merge (FreemarkerReportTemplate.java:42)
+    at net.thucydides.core.reports.html.Merger$MergeBuilder.to (Merger.java:37)
+    at net.thucydides.core.reports.html.BaseReportingTask.generateReportPage (BaseReportingTask.java:45)
+    at net.thucydides.core.reports.html.TagReportingTask.generateTagReport (TagReportingTask.java:83)
+    at net.thucydides.core.reports.html.TagReportingTask.generateReports (TagReportingTask.java:64)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:33)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:12)
+    at java.util.concurrent.FutureTask.run (FutureTask.java:266)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
+    at java.lang.Thread.run (Thread.java:748)
+Caused by: freemarker.core.InvalidReferenceException: The following has evaluated to null or missing:
+==> formatter.renderHeader  [in template "freemarker/home.ftl" at line 137, column 58]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+        - Failed at: ${formatter.htmlCompatibleStoryTitle(...  [in template "freemarker/home.ftl" at line 137, column 21]
+----
+    at freemarker.core.InvalidReferenceException.getInstance (InvalidReferenceException.java:134)
+    at freemarker.core.UnexpectedTypeException.newDescriptionBuilder (UnexpectedTypeException.java:85)
+    at freemarker.core.UnexpectedTypeException.<init> (UnexpectedTypeException.java:63)
+    at freemarker.core.NonMethodException.<init> (NonMethodException.java:74)
+    at freemarker.core.MethodCall._eval (MethodCall.java:67)
+    at freemarker.core.Expression.eval (Expression.java:101)
+    at freemarker.core.ListLiteral.getModelList (ListLiteral.java:93)
+    at freemarker.core.MethodCall._eval (MethodCall.java:60)
+    at freemarker.core.Expression.eval (Expression.java:101)
+    at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup (DollarVariable.java:100)
+    at freemarker.core.DollarVariable.accept (DollarVariable.java:63)
+    at freemarker.core.Environment.visit (Environment.java:331)
+    at freemarker.core.Environment.visit (Environment.java:337)
+    at freemarker.core.Environment.visit (Environment.java:337)
+    at freemarker.core.Environment.process (Environment.java:310)
+    at net.thucydides.core.reports.templates.FreemarkerReportTemplate.merge (FreemarkerReportTemplate.java:39)
+    at net.thucydides.core.reports.html.Merger$MergeBuilder.to (Merger.java:37)
+    at net.thucydides.core.reports.html.BaseReportingTask.generateReportPage (BaseReportingTask.java:45)
+    at net.thucydides.core.reports.html.TagReportingTask.generateTagReport (TagReportingTask.java:83)
+    at net.thucydides.core.reports.html.TagReportingTask.generateReports (TagReportingTask.java:64)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:33)
+    at net.thucydides.core.reports.html.ReportExecutor.call (ReportExecutor.java:12)
+    at java.util.concurrent.FutureTask.run (FutureTask.java:266)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
+    at java.lang.Thread.run (Thread.java:748)
+[WARNING] SOME REPORT PAGES COULD NOT BE GENERATED
+ * Failed to generate report for TagReportingTask for feature:Search - java.util.concurrent.ExecutionException: java.lang.RuntimeException: Failed to merge template: Failed to process FreeMarker template
+net.thucydides.core.reports.html.Merger$MergeBuilder.to(Merger.java:39)
+
+ * Failed to generate report for TagReportingTask for story:Search/Search demo three by keyword story - java.util.concurrent.ExecutionException: java.lang.RuntimeException: Failed to merge template: Failed to process FreeMarker template
+net.thucydides.core.reports.html.Merger$MergeBuilder.to(Merger.java:39)
+
+ * Failed to generate report for TagReportingTask for story:Search/Search demo one by keyword story - java.util.concurrent.ExecutionException: java.lang.RuntimeException: Failed to merge template: Failed to process FreeMarker template
+net.thucydides.core.reports.html.Merger$MergeBuilder.to(Merger.java:39)
+
+ * Failed to generate report for TagReportingTask for story:Search/Search demo two by keyword story - java.util.concurrent.ExecutionException: java.lang.RuntimeException: Failed to merge template: Failed to process FreeMarker template
+net.thucydides.core.reports.html.Merger$MergeBuilder.to(Merger.java:39)
+
+ * Failed to generate report for TagReportingTask for story:Search/Search demo two by keyword story - java.util.concurrent.ExecutionException: java.lang.RuntimeException: Failed to merge template: Failed to process FreeMarker template
+net.thucydides.core.reports.html.Merger$MergeBuilder.to(Merger.java:39)
+
+ * Failed to generate report for TagReportingTask for feature:Search - java.util.concurrent.ExecutionException: java.lang.RuntimeException: Failed to merge template: Failed to process FreeMarker template
+net.thucydides.core.reports.html.Merger$MergeBuilder.to(Merger.java:39)
+
+ * Failed to generate report for TagReportingTask for story:Search/Search demo one by keyword story - java.util.concurrent.ExecutionException: java.lang.RuntimeException: Failed to merge template: Failed to process FreeMarker template
+net.thucydides.core.reports.html.Merger$MergeBuilder.to(Merger.java:39)
+
+ * Failed to generate report for TagReportingTask for story:Search/Search demo three by keyword story - java.util.concurrent.ExecutionException: java.lang.RuntimeException: Failed to merge template: Failed to process FreeMarker template
+net.thucydides.core.reports.html.Merger$MergeBuilder.to(Merger.java:39)
+
+ * Failed to generate report for TagReportingTask for feature:Search - java.util.concurrent.ExecutionException: java.lang.RuntimeException: Failed to merge template: Failed to process FreeMarker template
+net.thucydides.core.reports.html.Merger$MergeBuilder.to(Merger.java:39)
+
+ * Failed to generate report for TagReportingTask for story:Search/Search demo one by keyword story - java.util.concurrent.ExecutionException: java.lang.RuntimeException: Failed to merge template: Failed to process FreeMarker template
+net.thucydides.core.reports.html.Merger$MergeBuilder.to(Merger.java:39)
+
+
+[INFO] Test results for 3 tests generated in 18.3 secs in directory: file:/C:/TRSDEV/SerenityBdd/MultiMavenProject/./reports/
+[INFO] -----------------------------------------
+[INFO]  SERENITY TESTS : SUCCESS
+[INFO] -----------------------------------------
+[INFO] | Tests executed         | 3
+[INFO] | Tests passed           | 3
+[INFO] | Tests failed           | 0
+[INFO] | Tests with errors      | 0
+[INFO] | Tests compromised      | 0
+[INFO] | Tests pending          | 0
+[INFO] | Tests ignored/skipped  | 0
+[INFO] ------------------------ | --------------
+[INFO] | Total Duration         | 1m 55s
+[INFO] | Fastest test took      | 30s 048ms
+[INFO] | Slowest test took      | 53s 561ms
+[INFO] -----------------------------------------
+[INFO]
+[INFO] SERENITY REPORTS
+[INFO]   - Full Report: file:///C:/TRSDEV/SerenityBdd/MultiMavenProject/./reports/index.html
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO]
+[INFO] Multi Module Maven Screenplay Project 0.0.1-SNAPSHOT SUCCESS [ 31.887 s]
+[INFO] Domain Group 0.0.1-SNAPSHOT ........................ SKIPPED
+[INFO] Domain One 0.0.1-SNAPSHOT .......................... SKIPPED
+[INFO] Serenity project with JUnit and WebDriver 1.0-SNAPSHOT SKIPPED
+[INFO] Domain Two 0.0.1-SNAPSHOT .......................... SKIPPED
+[INFO] Serenity project with JUnit and WebDriver 1.0-SNAPSHOT SKIPPED
+[INFO] Serenity project with JUnit and WebDriver 1.0-SNAPSHOT SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  34.314 s
+[INFO] Finished at: 2020-07-05T12:28:33+01:00
+[INFO] ------------------------------------------------------------------------
+
+C
